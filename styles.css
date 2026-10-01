@@ -1,0 +1,1518 @@
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+    --background: #11130f;
+    --background-light: #181b16;
+    --panel: #1d211b;
+    --panel-light: #252a22;
+
+    --text: #f1f0e8;
+    --muted: #a5aa9d;
+
+    --olive: #9ca678;
+    --olive-bright: #bdc990;
+    --sand: #d1bd8b;
+
+    --border: rgba(255, 255, 255, 0.12);
+
+    --max-width: 1300px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+button,
+a {
+    font: inherit;
+}
+
+button {
+    color: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    letter-spacing: -0.04em;
+}
+
+h1 {
+    max-width: 900px;
+    font-size: clamp(4rem, 9vw, 8.5rem);
+    font-weight: 800;
+}
+
+h1 span {
+    color: var(--olive-bright);
+    display: block;
+}
+
+h2 {
+    font-size: clamp(3rem, 6vw, 6rem);
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.eyebrow {
+    color: var(--olive-bright);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    margin-bottom: 20px;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    left: 0;
+    padding: 25px 5%;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    transition: background 0.3s ease, padding 0.3s ease;
+
+    z-index: 100;
+}
+.site-header.scrolled {
+    backdrop-filter: blur(18px);
+    background: rgba(17, 19, 15, 0.88);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    font-size: 0.85rem;
+    font-weight: 700;
+    gap: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.logo-mark {
+    align-items: center;
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    width: 45px;
+}
+
+.logo-mark img {
+    display: block;
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    gap: 35px;
+}
+
+.main-nav a {
+    color:  var(--muted);
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
+}
+.main-nav a:hover {
+    color: var(--text);
+}
+
+.menu-toggle {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-toggle span {
+    background: var(--text);
+    display: block;
+    height: 2px;
+    margin: 5px;
+    width: 25px;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 140px 7% 100px;
+    position: relative;
+}
+
+.hero-grid,
+.map-grid {
+    background-image: 
+        linear-gradient(
+            rgba(255, 255, 255, 0.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.035) 1px,
+            transparent 1px
+        );
+    
+    background-size: 60px 60px;
+    inset: 0;
+    position: absolute;
+}
+
+.hero-grid {
+    mask-image: linear-gradient(to bottom, black, transparent);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-intro {
+    color: var(--muted);
+    font-size: 1.15rem;
+    margin: 40px 0;
+    max-width: 650px;
+}
+
+.primary-button {
+    align-items: center;
+    background-color: var(--olive-bright);
+    color: #11130f;
+    display: inline-flex;
+    font-size: 0.85rem;
+    font-weight: 700;
+    gap: 35px;
+    padding: 18px 24px;
+    text-transform: uppercase;
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+.primary-button:hover {
+    background: var(--sand);
+    transform: translateY(-3px);
+}
+
+.hero-stats {
+    bottom: 8%;
+    display: flex;
+    gap: 45px;
+    position: absolute;
+    right: 7%;
+}
+
+.hero-stats div {
+    border-left: 1px solid var(--border);
+    padding-left: 15px;
+}
+
+.hero-stats strong {
+    color: var(--olive-bright);
+    display: block;
+    font-size: 0.75rem;
+}
+
+.hero-stats span {
+    color: var(--muted);
+    font-size: 0.75rem;
+}
+
+.scroll-indicator {
+    align-items: center;
+    bottom: 35px;
+    display: flex;
+    gap: 15px;
+    left: 7%;
+    position: absolute;
+}
+
+.scroll-indicator span {
+    color: var(--muted);
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+}
+
+.scroll-indicator div {
+    animation: scrollLine 2s infinite;
+    background: var(--olive);
+    height: 1px;
+    width: 70px;
+}
+
+@keyframes scrollLine {
+    0% {
+        opacity: 0.2;
+        transform: scaleX(0.3);
+        transform-origin: left;
+    }
+
+    50% {
+        opacity: 1;
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: scaleX(0.3);
+        transform-origin: right;
+    }
+}
+
+
+/* =========================================================
+   GENERIC SECTIONS
+========================================================= */
+
+.section {
+    margin: auto;
+    max-width: var(--max-width);
+    padding: 140px 5%;
+}
+
+.section-heading {
+    margin-bottom: 80px;
+    max-width: 850px;
+}
+
+.section-heading > p:last-child {
+    color: var(--muted);
+    font-size: 1.1rem;
+    max-width: 700px;
+}
+
+
+/* =========================================================
+   STRUCTURE
+========================================================= */
+
+.structure-section {
+    max-width: none;
+}
+
+.structure-layout {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: minmax(350px, 0.8fr) 1.2fr;
+}
+
+.structure-timeline {
+    border-top: 1px solid var(--border);
+}
+
+.structure-item {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    display: flex;
+    padding: 25px 15px;
+    text-align: left;
+    transition: background 0.25s ease, padding 0.25s ease;
+    width: 100%;
+}
+
+.structure-item:hover,
+.structure-item.active {
+    background: var(--panel);
+    padding-left: 25px;
+}
+
+.structure-number {
+    color: var(--olive);
+    font-size: 0.7rem;
+    margin-right: 25px;
+}
+
+.structure-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.structure-text small {
+    color: var(--olive);
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+}
+
+.structure-text strong {
+    font-size: 1.2rem;
+    margin: 4px 0;
+}
+
+.structure-text em {
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-style: normal;
+}
+
+.structure-display {
+    background: var(--panel);
+    min-height: 650px;
+    overflow: hidden;
+    padding: 60px;
+    position: sticky;
+    top: 100px;
+}
+
+.display-label {
+    color: var(--olive);
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+
+.structure-display h3 {
+    font-size: clamp(3rem, 6vw, 6rem);
+    margin: 15px 0 30px;
+}
+
+#displayDescription {
+    color: var(--muted);
+    max-width: 650px;
+}
+
+.unit-visual {
+    margin-top: 55px;
+    min-height: 280px;
+}
+
+.organisation-chart {
+    width: 100%;
+}
+
+.command-row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.command-card {
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.command-card:hover {
+    background: var(--panel-light);
+    border-color: var(--olive);
+    transform: translateY(-4px);
+}
+
+.rank-insignia {
+    display: flex;
+    align-items: center;      /* vertical centre */
+    justify-content: center;  /* horizontal centre */
+
+    height: 90px;
+    width: 90px;
+
+    margin: 0 auto 18px;
+}
+
+.rank-insignia img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+}
+
+.command-card:hover .rank-insignia img {
+    transform: scale(1.08);
+}
+
+.command-card .appointment {
+    color: var(--olive);
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.command-card strong {
+    display: block;
+    font-size: 0.95rem;
+}
+
+.command-card small {
+    color: var(--muted);
+    display: block;
+    font-size: 0.65rem;
+    margin-top: 4px;
+    text-transform: uppercase;
+}
+
+.organisation-connector {
+    background: var(--border);
+    height: 45px;
+    margin: 0 auto;
+    position: relative;
+    width: 1px;
+}
+
+.organisation-connector::after {
+    background: var(--border);
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 75%;
+}
+
+.group-row {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(120px, 1fr)
+    );
+}
+
+.group-card {
+    animation: groupAppear 0.45s ease backwards;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid var(--border);
+    min-height: 125px;
+    padding: 15px;
+    text-align: center;
+}
+
+.group-card strong {
+    display: block;
+    font-size: 0.75rem;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+
+.group-card small {
+    color: var(--muted);
+    display: block;
+    font-size: 0.6rem;
+    margin-top: 3px;
+}
+
+.group-icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 60px;
+    min-height: 35px;
+}
+
+.mini-soldier {
+    background: var(--olive-bright);
+    border-radius: 50%;
+    display: block;
+    height: 8px;
+    position: relative;
+    width: 8px;
+}
+
+.mini-soldier::after {
+    background: var(--olive);
+    content: "";
+    height: 10px;
+    left: 2px;
+    position: absolute;
+    top: 9px;
+    width: 4px;
+}
+
+@keyframes groupAppear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.display-footer {
+    border-top: 1px solid var(--border);
+    bottom: 30px;
+    color: var(--muted);
+    display: flex;
+    font-size: 0.6rem;
+    justify-content: space-between;
+    left: 60px;
+    letter-spacing: 0.15em;
+    padding-top: 20px;
+    position: absolute;
+    right: 60px;
+}
+
+
+/* =========================================================
+   RANKS
+========================================================= */
+
+.ranks-section {
+    max-width: none;
+}
+
+
+/* Tabs */
+
+.rank-tabs {
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.rank-tab {
+    background: transparent;
+    border: 0;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 15px 25px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.rank-tab::after {
+    background: var(--olive-bright);
+    bottom: -1px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+    width: 100%;
+}
+
+.rank-tab:hover {
+    color: var(--text);
+}
+
+.rank-tab.active {
+    color: var(--olive-bright);
+}
+
+.rank-tab.active::after {
+    transform: scaleX(1);
+}
+
+
+/* Grid */
+
+.rank-grid {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* Individual rank */
+
+.rank-card {
+    animation: rankAppear 0.45s ease backwards;
+    background: var(--panel);
+    min-height: 430px;
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.rank-card:hover {
+    background: var(--panel-light);
+    transform: translateY(-5px);
+}
+
+
+/* Large background number */
+
+.rank-card-number {
+    color: rgba(255, 255, 255, 0.035);
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+
+/* Insignia */
+
+.rank-card-insignia {
+    align-items: center;
+    display: flex;
+    height: 140px;
+    justify-content: center;
+    margin-bottom: 30px;
+    position: relative;
+    width: 140px;
+}
+
+.rank-card-insignia img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.rank-card:hover .rank-card-insignia img {
+    transform: scale(1.06);
+}
+
+
+/* Text */
+
+.rank-abbreviation {
+    color: var(--olive-bright);
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.rank-card h3 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.rank-card p {
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+
+/* Animation */
+
+@keyframes rankAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* =========================================================
+   CAPABILITIES
+========================================================= */
+
+.capability-grid {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.capability-card {
+    background: var(--panel);
+    min-height: 530px;
+    overflow: hidden;
+    padding: 45px;
+    position: relative;
+    transition: transform 0.35s ease, background 0.35s ease;
+}
+
+.capability-card:hover {
+    background: var(--panel-light);
+    transform: translateY(-10px);
+}
+
+.capability-number {
+    color: rgba(255, 255, 255, 0.035);
+    font-size: 9rem;
+    font-weight: 800;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+.capability-card h3 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.capability-card > p:not(.eyebrow) {
+    color: var(--muted);
+    min-height: 100px;
+}
+
+.capability-card ul {
+    border-top: 1px solid var(--border);
+    list-style: none;
+    margin-top: 30px;
+    padding-top: 25px;
+}
+
+.capability-card li {
+    color: var(--muted);
+    padding: 4px 0;
+}
+
+.capability-card li::before {
+    color: var(--olive);
+    content: "— ";
+}
+
+.capability-card a {
+    bottom: 35px;
+    color: var(--olive-bright);
+    font-size: 0.8rem;
+    font-weight: 700;
+    position: absolute;
+}
+
+
+/* =========================================================
+   BATTLEGROUP
+========================================================= */
+
+.battle-builder {
+    background: var(--panel);
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    min-height: 650px;
+}
+
+.battle-controls {
+    border-right: 1px solid var(--border);
+    padding: 40px;
+}
+
+.battle-button,
+.reset-button {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    display: flex;
+    padding: 17px 0;
+    text-align: left;
+    transition: color 0.2s ease, padding 0.2s ease;
+    width: 100%;
+}
+
+.battle-button span {
+    color: var(--olive-bright);
+    margin-right: 15px;
+}
+
+.battle-button:hover {
+    color: var(--olive-bright);
+    padding-left: 8px;
+}
+
+.battle-button.selected {
+    color: var(--olive-bright);
+}
+
+.reset-button {
+    color: var(--muted);
+    font-size: 0.75rem;
+    margin-top: 35px;
+}
+
+.battle-map {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 650px;
+    overflow: hidden;
+    position: relative;
+}
+
+.map-grid {
+    opacity: 0.7;
+}
+
+.core-unit {
+    align-items: center;
+    background: var(--olive-bright);
+    color: var(--background);
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    justify-content: center;
+    position: relative;
+    width: 170px;
+    z-index: 5;
+}
+
+.core-unit span,
+.core-unit small {
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+}
+
+.core-unit strong {
+    font-size: 1.1rem;
+    margin: 8px;
+}
+
+.battle-node {
+    align-items: center;
+    animation: nodeEnter 0.5s ease;
+    background: var(--background-light);
+    border: 1px solid var(--olive);
+    display: flex;
+    font-size: 0.7rem;
+    height: 100px;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    z-index: 4;
+}
+
+@keyframes nodeEnter {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* =========================================================
+   REGIMENT CARDS
+========================================================= */
+
+.filter-bar {
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.filter {
+    background: transparent;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    padding: 10px 18px;
+}
+
+.filter.active,
+.filter:hover {
+    background: var(--olive-bright);
+    color: var(--background);
+}
+
+.regiment-grid {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.regiment-card {
+    background: var(--panel);
+    min-height: 420px;
+    padding: 30px;
+    position: relative;
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.regiment-card:hover {
+    background: var(--panel-light);
+    transform: translateY(-5px);
+}
+
+.regiment-card.hidden {
+    display: none;
+}
+
+.card-tag {
+    color: var(--olive);
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+}
+
+.regiment-card h3 {
+    font-size: 1.6rem;
+    margin: 10px 0 20px;
+}
+
+.regiment-card p {
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+.cap-badge {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    margin: 25px 0 20px;
+    width: 100px;
+}
+
+.cap-badge img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.regiment-card:hover .cap-badge img {
+    transform: scale(1.08);
+}
+
+.card-arrow {
+    align-items: center;
+    bottom: 25px;
+    color: var(--olive-bright);
+    display: flex;
+    font-size: 1.2rem;
+    height: 36px;
+    justify-content: center;
+    position: absolute;
+    right: 25px;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+    width: 36px;
+}
+
+.card-arrow:hover {
+    background: var(--olive-bright);
+    color: var(--background);
+    transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   REGIMENT EXPLORER
+========================================================= */
+
+.regiment-explorer {
+    background: var(--panel);
+    border-top: 1px solid var(--border);
+    display: none;
+    margin-top: 2px;
+    padding: 45px;
+    scroll-margin-top: 100px;
+}
+
+.regiment-explorer.open {
+    display: block;
+}
+
+
+/* Explorer header */
+
+.regiment-explorer-header {
+    align-items: flex-start;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    padding-bottom: 30px;
+}
+
+.regiment-explorer-header .eyebrow {
+    margin-bottom: 10px;
+}
+
+.regiment-explorer-header h3 {
+    font-size: 2.2rem;
+}
+
+
+/* Close button */
+
+.explorer-close {
+    align-items: center;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    cursor: pointer;
+    display: flex;
+    font-size: 1.4rem;
+    height: 42px;
+    justify-content: center;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+    width: 42px;
+}
+
+.explorer-close:hover {
+    background: var(--olive-bright);
+    border-color: var(--olive-bright);
+    color: var(--background);
+}
+
+
+/* =========================================================
+   SUB-REGIMENT GRID
+========================================================= */
+
+.sub-regiment-grid {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* Individual regiment */
+
+.sub-regiment-card {
+    animation: regimentAppear 0.4s ease backwards;
+    background: var(--background-light);
+    border: 1px solid transparent;
+    min-height: 285px;
+    padding: 25px;
+    position: relative;
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.sub-regiment-card:hover {
+    background: var(--panel-light);
+    border-color: var(--border);
+    transform: translateY(-4px);
+}
+
+
+/* Regular / Reserve label */
+
+.sub-regiment-type {
+    color: var(--olive);
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+
+/* Cap badge */
+
+.sub-regiment-badge {
+    align-items: center;
+    display: flex;
+    height: 125px;
+    justify-content: center;
+    margin: 5px auto 25px;
+    width: 125px;
+}
+
+.sub-regiment-badge img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.sub-regiment-card:hover .sub-regiment-badge img {
+    transform: scale(1.06);
+}
+
+
+/* Regiment name */
+
+.sub-regiment-card h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.35;
+    max-width: 180px;
+}
+
+
+/* External link */
+
+.sub-regiment-link {
+    align-items: center;
+    bottom: 20px;
+    color: var(--olive-bright);
+    display: flex;
+    font-size: 1.1rem;
+    height: 34px;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+    width: 34px;
+}
+
+.sub-regiment-link:hover {
+    background: var(--olive-bright);
+    color: var(--background);
+    transform: translate(3px, -3px);
+}
+
+
+/* =========================================================
+   EXPLORE REGIMENTS BUTTON
+========================================================= */
+
+.card-expand {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    bottom: 25px;
+    color: var(--olive-bright);
+    cursor: pointer;
+    display: flex;
+    font-size: 0.75rem;
+    font-weight: 700;
+    gap: 12px;
+    left: 30px;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.card-expand span {
+    transition: transform 0.25s ease;
+}
+
+.card-expand:hover span {
+    transform: translateY(4px);
+}
+
+.card-expand[aria-expanded="true"] span {
+    transform: rotate(180deg);
+}
+
+
+/* Entry animation */
+
+@keyframes regimentAppear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    display: flex;
+    font-size: 0.75rem;
+    justify-content: space-between;
+    margin: 80px 5% 0;
+    padding: 50px 0;
+}
+
+footer strong {
+    color: var(--text);
+}
+
+
+/* =========================================================
+   SCROLL ANIMATIONS
+========================================================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .rank-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .capability-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .capability-card {
+        min-height: 430px;
+    }
+
+    .regiment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .structure-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .structure-display {
+        position: relative;
+        top: auto;
+    }
+
+    .battle-builder {
+        grid-template-columns: 1fr;
+    }
+
+    .battle-controls {
+        border-bottom: 1px solid var(--border);
+        border-right: 0;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .site-header {
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        background: var(--background);
+        flex-direction: column;
+        gap: 25px;
+        left: 0;
+        padding: 100px 30px 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateY(-120%);
+        transition: transform 0.3s ease;
+        z-index: -1;
+    }
+
+    .main-nav.open {
+        transform: translateY(0);
+    }
+
+    .hero {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .hero-stats {
+        display: none;
+    }
+
+    .section {
+        padding: 100px 25px;
+    }
+
+    .rank-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rank-card {
+        min-height: 380px;
+        padding: 20px;
+    }
+
+    .rank-card-insignia {
+        height: 100px;
+        width: 100px;
+    }
+
+    .rank-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .structure-display {
+        min-height: 600px;
+        padding: 35px 25px;
+    }
+
+    .command-row {
+        flex-direction: column;
+    }
+
+    .command-card {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .group-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .organisation-connector::after {
+        width: 90%;
+    }
+
+    .display-footer {
+        left: 25px;
+        right: 25px;
+    }
+
+    .regiment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-bar {
+        flex-wrap: wrap;
+    }
+
+    .sub-regiment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .battle-map {
+        min-height: 600px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .rank-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rank-card {
+        min-height: 0;
+    }
+
+    .rank-card-insignia {
+        height: 120px;
+        width: 120px;
+    }
+
+    .sub-regiment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sub-regiment-card {
+        min-height: 230px;
+    }
+
+    .sub-regiment-badge {
+        height: 110px;
+        width: 110px;
+    }
+
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

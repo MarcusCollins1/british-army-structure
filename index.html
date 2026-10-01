@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>British Army Structure | Interactive Guide</title>
+
+    <meta name="description" content="An interactive guide to the structure, formations and capabilities of the British Army.">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/ico" href="british-army-logo.ico">
+</head>
+<body>
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================== -->
+
+    <header class="site-header" id="siteHeader">
+        <a href="#home" class="logo">
+            <span class="logo-mark">
+                <img src="images/british-army-logo.png" alt="British Army">
+            </span>
+            <span>Army Structure</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="#structure">Structure</a>
+            <a href="#ranks">Ranks</a>
+            <a href="#capabilities">Capabilities</a>
+            <a href="#battlegroup">Battlegroups</a>
+            <a href="#regiments">Regiments & Corps</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-grid"></div>
+
+            <div class="hero-content reveal">
+
+                <p class="eyebrow">AN INTERACTIVE GUIDE</p>
+
+                <h1>
+                    How the
+                    <span>British Army</span>
+                    Fits Together
+                </h1>
+
+                <p class="hero-intro">
+                    From a small section of soldiers to battlegroups,
+                    brigades and divisions, explore how the British Army
+                    organises people and capabilities for operations.
+                </p>
+
+                <a href="#structure" class="primary-button">
+                    Explore the structure
+                    <span>↓</span>
+                </a>
+
+            </div>
+
+            <div class="hero-stats reveal">
+
+                <div>
+                    <strong>01</strong>
+                    <span>Structure</span>
+                </div>
+
+                <div>
+                    <strong>02</strong>
+                    <span>Capabilities</span>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <span>Battlegroups</span>
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span>SCROLL</span>
+                <div></div>
+            </div>
+
+        </section>
+
+         <!-- =====================================================
+             STRUCTURE
+        ====================================================== -->
+
+        <section class="section structure-section" id="structure">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">FROM SOLDIER TO FORMATION</p>
+
+                <h2>Building the Army</h2>
+
+                <p>
+                    Army organisations are built from progressively larger
+                    groups. Exact numbers and structures vary depending on
+                    role, regiment and operational requirements.
+                </p>
+            </div>
+
+            <div class="structure-layout">
+
+                <div class="structure-timeline">
+
+                    <button class="structure-item active reveal" data-level="section">
+                        <span class="structure-number">01</span>
+                        <span class="structure-text">
+                            <small>FOUNDATION</small>
+                            <strong>SECTION</strong>
+                            <em>Typically around 8 soldiers</em>
+                        </span>
+                    </button>
+
+                    <button class="structure-item reveal" data-level="platoon">
+                        <span class="structure-number">02</span>
+                        <span class="structure-text">
+                            <small>MULTIPLE SECTIONS</small>
+                            <strong>Platoon</strong>
+                            <em>Typically around 30 soldiers</em>
+                        </span>
+                    </button>
+
+                    <button class="structure-item reveal" data-level="company">
+                        <span class="structure-number">03</span>
+                        <span class="structure-text">
+                            <small>MULTIPLE PLATOONS</small>
+                            <strong>Company / Squadron</strong>
+                            <em>Often 100+ personnel</em>
+                        </span>
+                    </button>
+
+                    <button class="structure-item reveal" data-level="battalion">
+                        <span class="structure-number">04</span>
+                        <span class="structure-text">
+                            <small>TACTICAL UNIT</small>
+                            <strong>Battalion / Regiment</strong>
+                            <em>Several companies or squadrons</em>
+                        </span>
+                    </button>
+
+                    <button class="structure-item reveal" data-level="brigade">
+                        <span class="structure-number">05</span>
+                        <span class="structure-text">
+                            <small>COMBINED FORMATION</small>
+                            <strong>Brigade</strong>
+                            <em>Multiple units and capabilities</em>
+                        </span>
+                    </button>
+
+                    <button class="structure-item reveal" data-level="division">
+                        <span class="structure-number">06</span>
+                        <span class="structure-text">
+                            <small>LARGE FORMATION</small>
+                            <strong>Division</strong>
+                            <em>Multiple brigades</em>
+                        </span>
+                    </button>
+
+                </div>
+
+                <div class="structure-display reveal">
+
+                    <p class="display-label" id="displayLabel">
+                        FOUNDATION
+                    </p>
+
+                    <h3 id="displayTitle">Section</h3>
+
+                    <p id="displayDescription">
+                        A section is one of the basic building blocks of
+                        infantry organisation. It is normally commanded by
+                        a junior non-commissioned officer.
+                    </p>
+
+                    <div class="unit-visual" id="unitVisual" aria-live="polite"></div>
+
+                    <div class="display-footer">
+                        <span>SELECT A LEVEL</span>
+                        <span>01-06</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+            RANKS
+        ====================================================== -->
+
+        <section class="section ranks-section" id="ranks">
+
+            <div class="section-heading reveal">
+
+                <p class="eyebrow">RANK STRUCTURE</p>
+
+                <h2>Ranks in the British Army</h2>
+
+                <p>
+                    Rank identifies a person's position within the Army's
+                    command structure. Explore the progression of soldier
+                    and officer ranks below.
+                </p>
+
+            </div>
+
+            <div class="rank-tabs reveal">
+
+                <button class="rank-tab active" data-rank-group="soldiers">Soldiers</button>
+
+                <button class="rank-tab" data-rank-group="officers">Officers</button>
+
+            </div>
+
+            <div class="rank-grid reveal" id="rankGrid"></div>
+
+        </section>
+
+        <!-- =====================================================
+             CAPABILITIES
+        ====================================================== -->
+
+        <section class="section capabilities-section" id="capabilities">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">CAPABILITIES</p>
+
+                <h2>More Than Fighting Troops</h2>
+
+                <p>
+                    An effective land force combines units that fight
+                    directly with those that provide specialist support,
+                    sustainment and logistics.
+                </p>
+            </div>
+
+            <div class="capability-grid">
+
+                <article class="capability-card combat reveal">
+                    <div class="capability-number">01</div>
+
+                    <p class="eyebrow">CLOSE COMBAT</p>
+
+                    <h3>Combat</h3>
+
+                    <p>
+                        Forces primarily responsible for engaging the enemy
+                        and controlling ground.
+                    </p>
+
+                    <ul>
+                        <li>Infantry</li>
+                        <li>Armoured forces</li>
+                        <li>Armoured cavalry</li>
+                    </ul>
+
+                    <a href="#regiments">Explore units →</a>
+                </article>
+
+                <article class="capability-card support reveal">
+                    <div class="capability-number">02</div>
+
+                    <p class="eyebrow">ENABLE THE FORCE</p>
+
+                    <h3>Combat Support</h3>
+
+                    <p>
+                        Specialist capabilities that help combat forces
+                        manoeuvre, communicate, understand and influence
+                        the battlefield.
+                    </p>
+
+                    <ul>
+                        <li>Royal Artillery</li>
+                        <li>Royal Engineers</li>
+                        <li>Royal Signals</li>
+                        <li>Army Aviation</li>
+                    </ul>
+
+                    <a href="#regiments">Explore units →</a>
+                </article>
+
+                <article class="capability-card service reveal">
+                    <div class="capability-number">03</div>
+
+                    <p class="eyebrow">SUSTAIN THE FORCE</p>
+
+                    <h3>Combat Service Support</h3>
+
+                    <p>
+                        The personnel and organisations that keep formations
+                        supplied, maintained, transported and medically
+                        supported.
+                    </p>
+
+                    <ul>
+                        <li>Royal Logistic Corps</li>
+                        <li>REME</li>
+                        <li>Army Medical Services</li>
+                    </ul>
+
+                    <a href="#regiments">Explore units →</a>
+                </article>
+                
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+             BATTLEGROUP
+        ====================================================== -->
+
+        <section class="section battlegroup-section" id="battlegroup">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">COMBINED ARMS</p>
+
+                <h2>Building a Battlegroup</h2>
+
+                <p>
+                    A battlegroup is not simply another permanent rung in
+                    the hierarchy. It can be assembled around a core unit
+                    and reinforced with capabilities needed for a particular
+                    operation.
+                </p>
+            </div>
+
+            <div class="battle-builder reveal">
+
+                <div class="battle-controls">
+
+                    <p class="eyebrow">ADD CAPABILITIES</p>
+
+                    <button class="battle-button" data-unit="infantry">
+                        <span>+</span>
+                        Infantry
+                    </button>
+
+                    <button class="battle-button" data-unit="armour">
+                        <span>+</span>
+                        Armour
+                    </button>
+
+                    <button class="battle-button" data-unit="artillery">
+                        <span>+</span>
+                        Artillery
+                    </button>
+
+                    <button class="battle-button" data-unit="engineers">
+                        <span>+</span>
+                        Engineers
+                    </button>
+
+                    <button class="battle-button" data-unit="signals">
+                        <span>+</span>
+                        Signals
+                    </button>
+
+                    <button class="battle-button" data-unit="logistics">
+                        <span>+</span>
+                        Logistics
+                    </button>
+
+                    <button class="battle-button" data-unit="medical">
+                        <span>+</span>
+                        Medical
+                    </button>
+
+                    <button class="reset-button" id="resetBattlegroup">
+                        Reset battlegroup
+                    </button>
+
+                </div>
+
+                <div class="battle-map" id="battleMap">
+
+                    <div class="map-grid"></div>
+
+                    <div class="core-unit">
+                        <span>CORE</span>
+                        <strong>Battlegroup</strong>
+                        <small>Manoeuvre Unit</small>
+                    </div>
+
+                    <div class="battle-nodes" id="battleNodes"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+             REGIMENTS / CORPS
+        ====================================================== -->
+
+        <section class="section regiment-section" id="regiments">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">REGIMENTS & CORPS</p>
+
+                <h2>Different Roles. One Army.</h2>
+
+                <p>
+                    Select a capability below to explore some of the
+                    regiments and corps that contribute to the Army.
+                </p>
+            </div>
+
+            <div class="filter-bar reveal">
+
+                <button class="filter active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter" data-filter="combat">
+                    Combat
+                </button>
+
+                <button class="filter" data-filter="support">
+                    Combat Support
+                </button>
+
+                <button class="filter" data-filter="service">
+                    Combat Service Support
+                </button>
+
+            </div>
+
+            <div class="regiment-grid">
+
+                <article class="regiment-card reveal" data-category="combat">
+                    <span class="card-tag">COMBAT</span>
+
+                    <div class="cap-badge">
+                        <img src="images/cap-badges/infantry.png" alt="Infantry Cap Badge">
+                    </div>
+
+                    <h3>Infantry</h3>
+
+                    <p>
+                        Soldiers trained to fight primarily on foot, from
+                        light-role operations to armoured infantry.
+                    </p>
+
+                    <button class="card-expand" data-expand="infantry" aria-expanded="false">
+                        Explore Regiments
+                        <span>↓</span>
+                    </button>
+
+                    <a href="https://jobs.army.mod.uk/roles/infantry/" class="card-arrow" target="_blank" rel="noopener noreferrer" aria-label="Visit the Infantry Page">↗</a>
+                </article>
+
+
+                <article class="regiment-card reveal" data-category="combat">
+                    <span class="card-tag">COMBAT</span>
+
+                    <div class="cap-badge">
+                        <img src="images/cap-badges/royal-armoured-corps.png" alt="Royal Armoured Corps Cap Badge">
+                    </div>
+
+                    
+                    <h3>Royal Armoured Corps</h3>
+
+                    <p>
+                        Provides armour and mounted reconnaissance using
+                        vehicles including main battle tanks and specialised
+                        reconnaissance platforms.
+                    </p>
+
+                    <button class="card-expand" data-expand="rac" aria-expanded="false">
+                        Explore Regiments
+                        <span>↓</span>
+                    </button>
+
+                    <a href="https://jobs.army.mod.uk/roles/royal-armoured-corps/" class="card-arrow" target="_blank" rel="noopener noreferrer" aria-label="Visit the Royal Armoured Corps Page">↗</a>
+                </article>
+
+
+                <article class="regiment-card reveal" data-category="support">
+                    <span class="card-tag">COMBAT SUPPORT</span>
+
+                    <div class="cap-badge">
+                        <img src="images/cap-badges/royal-artillery.png" alt="Royal Artillery Cap Badge">
+                    </div>
+
+                    
+                    <h3>Royal Artillery</h3>
+
+                    <p>
+                        Provides fires, surveillance and other specialist
+                        capabilities to formations.
+                    </p>
+
+                    <a href="https://jobs.army.mod.uk/roles/royal-artillery/" class="card-arrow" target="_blank" rel="noopener noreferrer" aria-label="Visit the Royal Artillery Page">↗</a>
+                </article>
+
+
+                <article class="regiment-card reveal" data-category="support">
+                    <span class="card-tag">COMBAT SUPPORT</span>
+
+                    <div class="cap-badge">
+                        <img src="images/cap-badges/royal-engineers.png" alt="Royal Engineers Cap Badge">
+                    </div>
+
+                    
+                    <h3>Royal Engineers</h3>
+
+                    <p>
+                        Military engineers who help forces move, operate,
+                        survive and overcome physical obstacles.
+                    </p>
+
+                    <a href="https://jobs.army.mod.uk/roles/royal-engineers/" class="card-arrow" target="_blank" rel="noopener noreferrer" aria-label="Visit the Royal Engineers Page">↗</a>
+                </article>
+
+
+                <article class="regiment-card reveal" data-category="support">
+                    <span class="card-tag">COMBAT SUPPORT</span>
+
+                    <div class="cap-badge">
+                        <img src="images/cap-badges/royal-signals.png" alt="Royal Signals Cap Badge">
+                    </div>
+
+                    
+                    <h3>Royal Signals</h3>
+
+                    <p>
+                        Provides communications, networks and information
+                        services for deployed forces.
+                    </p>
+
+                    <a href="https://jobs.army.mod.uk/roles/royal-signals/" class="card-arrow" target="_blank" rel="noopener noreferrer" aria-label="Visit the Royal Signals Page">↗</a>
+                </article>
+
+
+                <article class="regiment-card reveal" data-category="service">
+                    <span class="card-tag">COMBAT SERVICE SUPPORT</span>
+
+                    <div class="cap-badge">
+                        <img src="images/cap-badges/royal-logistics-corps.png" alt="Royal Logistics Corps Cap Badge">
+                    </div>
+
+                    
+                    <h3>Royal Logistic Corps</h3>
+
+                    <p>
+                        Provides logistics including transport, supply and
+                        distribution.
+                    </p>
+
+                    <a href="https://jobs.army.mod.uk/roles/royal-logistic-corps/" class="card-arrow" target="_blank" rel="noopener noreferrer" aria-label="Visit the Royal Logistics Corps Page">↗</a>
+                </article>
+
+
+                <article class="regiment-card reveal" data-category="service">
+                    <span class="card-tag">COMBAT SERVICE SUPPORT</span>
+
+                    <div class="cap-badge">
+                        <img src="images/cap-badges/royal-electrical-and-mechanical-engineers.png" alt="REME Cap Badge">
+                    </div>
+
+                    
+                    <h3>REME</h3>
+
+                    <p>
+                        The Royal Electrical and Mechanical Engineers keep
+                        Army equipment maintained and available.
+                    </p>
+
+                    <a href="https://jobs.army.mod.uk/roles/royal-electrical-and-mechanical-engineers/" class="card-arrow" target="_blank" rel="noopener noreferrer" aria-label="Visit the REME Page">↗</a>
+                </article>
+
+
+                <article class="regiment-card reveal" data-category="service">
+                    <span class="card-tag">COMBAT SERVICE SUPPORT</span>
+
+                    <div class="cap-badge">
+                        <img src="images/cap-badges/army-medical-services.png" alt="Army Medical Services Cap Badge">
+                    </div>
+
+                    
+                    <h3>Army Medical Services</h3>
+
+                    <p>
+                        Provides medical support to soldiers in the UK and
+                        on deployed operations.
+                    </p>
+
+                    <a href="https://jobs.army.mod.uk/roles/army-medical-service/" class="card-arrow" target="_blank" rel="noopener noreferrer" aria-label="Visit the Army Medical Services Page">↗</a>
+                </article>
+
+            </div>
+
+            <div class="regiment-explorer" id="regimentExplorer">
+
+                <div class="regiment-explorer-header">
+                    <div>
+                        <p class="eyebrow" id="explorerLabel">
+                            INFANTRY
+                        </p>
+
+                        <h3 id="explorerTitle">
+                            Infantry Regiments
+                        </h3>
+                    </div>
+
+                    <button class="explorer-close" id="explorerClose" aria-label="Close regiment explorer">x</button>
+                </div>
+
+                <div class="sub-regiment-grid" id="subRegimentGrid"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer>
+
+        <div>
+            <strong>British Army Structure</strong>
+            <p>An independent interactive educational guide.</p>
+        </div>
+
+        <p>
+            Unit structures vary according to role and operational
+            requirements.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
