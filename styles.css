@@ -131,6 +131,31 @@ h3 {
     padding-top: 15px;
 }
 
+.return-link {
+    align-items: center;
+    border: 1px solid var(--border);
+    display: flex;
+    gap: 12px;
+    padding: 10px 16px;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+.return-link span {
+    color: var(--olive-bright);
+    font-size: 1rem;
+    transition: transform 0.2s ease;
+}
+.return-link:hover {
+    background: var(--panel);
+    border-color: var(--olive);
+    color: var(--text);
+}
+.return-link:hover span {
+    transform: translateX(-4px);
+}
+
 .logo {
     align-items: center;
     display: flex;
