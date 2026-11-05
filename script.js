@@ -761,7 +761,7 @@ function renderOrganisation(id) {
 
 async function loadOrganisationData() {
     try {
-        const response = await fetch("data/organisation.json");
+        const response = await fetch("data/organisations.json");
 
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);
