@@ -1183,6 +1183,207 @@ h3 {
 
 
 /* =========================================================
+   ORGANISATION EXPLORER
+========================================================= */
+
+.organisation-explorer {
+    background: var(--panel);
+    display: none;
+    margin-top: 2px;
+    padding: 45px;
+    scroll-margin-top: 100px;
+}
+.organisation-explorer.open {
+    display: block;
+}
+
+/* Header */
+
+.organisation-explorer-header {
+    align-items: flex-start;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding-bottom: 35px;
+}
+.organisation-explorer-header > div {
+    max-width: 750px;
+}
+.organisation-explorer-header h3 {
+    font-size: clamp(2rem, 4vw, 4rem);
+    margin-bottom: 20px;
+}
+
+.organisation-summary {
+    color: var(--muted);
+    max-width: 650px;
+}
+
+/* Close */
+
+.organisation-close {
+    align-items: center;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    cursor: pointer;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    height: 45px;
+    justify-content: center;
+    transition: background 0.2s ease, color 0.2s ease;
+    width: 45px;
+}
+.organisation-close:hover {
+    background: var(--olive-bright);
+    color: var(--background);
+}
+
+/* Back */
+
+.organisation-back {
+    background: transparent;
+    border: 0;
+    color: var(--olive-bright);
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding: 0;
+    text-transform: uppercase;
+}
+.organisation-back:hover {
+    color: var(--sand);
+}
+
+/* Grid */
+
+.organisation-grid {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* Cards */
+
+.organisation-card {
+    animation: organisationAppear 0.4s ease backwards;
+    background: var(--background-light);
+    min-height: 340px;
+    padding: 25px;
+    position: relative;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+.organisation-card:hover {
+    background: var(--panel-light);
+    transform: translateY(-4px);
+}
+
+/* Badge */
+
+.organisation-badge {
+    align-items: center;
+    display: flex;
+    height: 110px;
+    justify-content: center;
+    margin-bottom: 25px;
+    width: 110px;
+}
+.organisation-badge img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Type */
+
+.organisation-card-type {
+    color: var(--olive);
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Name */
+
+.organisation-card h4 {
+    font-size: 1.1rem;
+    line-height: 1.25;
+    margin-bottom: 8px;
+}
+
+/* Abbreviation */
+
+.organisation-abbreviation {
+    color: var(--olive-bright);
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Description */
+
+.organisation-card p {
+    color: var(--muted);
+    font-size: 0.78rem;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+/* Actions */
+
+.organisation-card-action,
+.organisation-external {
+    bottom: 22px;
+    color: var(--olive-bright);
+    font-size: 0.7rem;
+    font-weight: 700;
+    position: absolute;
+}
+
+.organisation-card-action {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    left: 25px;
+    padding: 0;
+}
+
+.organisation-external {
+    left: 25px;
+}
+
+.organisation-card-action:hover,
+.organisation-external:hover {
+    color: var(--sand);
+}
+
+/* Animation */
+
+@keyframes organisationAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
    FOOTER
 ========================================================= */
 
@@ -1256,8 +1457,11 @@ footer strong {
         border-bottom: 1px solid var(--border);
         border-right: 0;
     }
-}
 
+    .organisation-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
 
 @media (max-width: 700px) {
 
@@ -1354,6 +1558,27 @@ footer strong {
 
     .battle-map {
         min-height: 600px;
+    }
+
+    .organisation-explorer {
+        padding: 30px 20px;
+    }
+
+    .organisation-explorer-header {
+        gap: 20px;
+    }
+
+    .organisation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .organisation-card {
+        min-height: 300px;
+    }
+
+    .organisation-badge {
+        height: 100px;
+        width: 100px;
     }
 
     footer {

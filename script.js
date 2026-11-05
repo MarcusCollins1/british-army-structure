@@ -641,161 +641,7 @@ filterButtons.forEach(button => {
    REGIMENT DATA
 ========================================================= */
 
-const regimentData = {
-    infantry: {
-        label: "INFANTRY",
-        title: "Infantry Regiments",
-
-        regiments: [
-            {
-                name: "Coldstream Guards",
-                badge: "images/cap-badges/coldstream-guards.png"
-            },
-            {
-                name: "Grenadier Guards",
-                badge: "images/cap-badges/grenadier-guards.png"
-            },
-            {
-                name: "Irish Guards",
-                badge: "images/cap-badges/irish-guards.png"
-            },
-            {
-                name: "Scots Guards",
-                badge: "images/cap-badges/scots-guards.png"
-            },
-            {
-                name: "Welsh Guards",
-                badge: "images/cap-badges/welsh-guards.png"
-            },
-            {
-                name: "The Duke of Lancaster's Regiment",
-                badge: "images/cap-badges/the-duke-of-lancaster's-regiment.png"
-            },
-            {
-                name: "The Mercian Regiment",
-                badge: "images/cap-badges/the-mercian-regiment.png"
-            },
-            {
-                name: "The Parachute Regiment",
-                badge: "images/cap-badges/the-parachute-regiment.png"
-            },
-            {
-                name: "The Princess of Wales's Royal Regiment",
-                badge: "images/cap-badges/the-princess-of-wales's-royal-regiment.png"
-            },
-            {
-                name: "The Rifles",
-                badge: "images/cap-badges/the-rifles.png"
-            },
-            {
-                name: "The Royal Anglian Regiment",
-                badge: "images/cap-badges/the-royal-anglian-regiment.png"
-            },
-            {
-                name: "The Royal Gurkha Rifles",
-                badge: "images/cap-badges/the-royal-gurkha-rifles.png"
-            },
-            {
-                name: "The Royal Irish Regiment",
-                badge: "images/cap-badges/the-royal-irish-regiment.png"
-            },
-            {
-                name: "The Royal Regiment of Fusiliers",
-                badge: "images/cap-badges/the-royal-regiment-of-fusiliers.png"
-            },
-            {
-                name: "The Royal Regiment of Scotland",
-                badge: "images/cap-badges/the-royal-regiment-of-scotland.png"
-            },
-            {
-                name: "The Royal Welsh",
-                badge: "images/cap-badges/the-royal-welsh.png"
-            },
-            {
-                name: "The Royal Yorkshire Regiment",
-                badge: "images/cap-badges/the-royal-yorkshire-regiment.png"
-            },
-            {
-                name: "The Royal Gibraltar Regiment",
-                badge: "images/cap-badges/the-royal-gibraltar-regiment.png"
-            }
-        ]
-    },
-
-    rac: {
-        label: "ROYAL ARMOURED CORPS",
-        title: "Royal Armoured Corps Regiments",
-
-        regiments: [
-            {
-                name: "1st The Queen's Dragoon Guards",
-                badge: "images/cap-badges/queens-dragoon-guards.png",
-                type: "Regular"
-            },
-            {
-                name: "The Household Cavalry Regiment",
-                badge: "images/cap-badges/household-cavalry.png",
-                type: "Regular"
-            },
-            {
-                name: "The King's Royal Hussars",
-                badge: "images/cap-badges/kings-royal-hussars.png",
-                type: "Regular"
-            },
-            {
-                name: "The Light Dragoons",
-                badge: "images/cap-badges/light-dragoons.png",
-                type: "Regular"
-            },
-            {
-                name: "The Queen's Royal Hussars",
-                badge: "images/cap-badges/queens-royal-hussars.png",
-                type: "Regular"
-            },
-            {
-                name: "The Royal Dragoon Guards",
-                badge: "images/cap-badges/royal-dragoon-guards.png",
-                type: "Regular"
-            },
-            {
-                name: "The Royal Lancers (Queen Elizabeths' Own)",
-                badge: "images/cap-badges/royal-lancers.png",
-                type: "Regular"
-            },
-            {
-                name: "The Royal Scots Dragoon Guards",
-                badge: "images/cap-badges/royal-scots-dragoon-guards.png",
-                type: "Regular"
-            },
-            {
-                name: "The Royal Tank Regiment",
-                badge: "images/cap-badges/royal-tank-regiment.png",
-                type: "Regular"
-            },
-
-            {
-                name: "The Queen's Own Yeomanry",
-                badge: "images/cap-badges/queens-own-yeomanry.png",
-                type: "Reserve"
-            },
-            {
-                name: "The Royal Wessex Yeomanry",
-                badge: "images/cap-badges/royal-wessex-yeomanry.png",
-                type: "Reserve"
-            },
-            {
-                name: "The Royal Yeomanry",
-                badge: "images/cap-badges/royal-yeomanry.png",
-                type: "Reserve"
-            },
-            {
-                name: "The Scottish and North Irish Yeomanry",
-                badge: "images/cap-badges/scottish-north-irish-yeomanry.png",
-                type: "Reserve"
-            }
-        ]
-    }
-};
+let organisationData = {};
 
 const regimentExplorer = document.getElementById("regimentExplorer");
 const explorerLabel = document.getElementById("explorerLabel");
@@ -803,127 +649,175 @@ const explorerTitle = document.getElementById("explorerTitle");
 const subRegimentGrid = document.getElementById("subRegimentGrid");
 const explorerClose = document.getElementById("explorerClose");
 
-function renderRegiments(category) {
+const organisationExplorer = document.getElementById("organisationExplorer");
+const organisationTitle = document.getElementById("organisationTitle");
+const organisationType = document.getElementById("organisationType");
+const organisationSummary = document.getElementById("organisationSummary");
+const organisationGrid = document.getElementById("organisationGrid");
+const organisationClose = document.getElementById("organisationClose");
+const organisationBack = document.getElementById("organisationBack");
 
-    const data = regimentData[category];
+let currentOrganisation = null;
 
-    if (!data) {
+function renderOrganisation(id) {
+    const organisation = organisationData[id];
+
+    if (!organisation)
         return;
+
+    currentOrganisation = id;
+
+    // HEADER
+    organisationTitle.textContent = organisation.name;
+    organisationType.textContent = organisation.type || "ORGANISATION";
+    organisationSummary.textContent = organisation.summary || "";
+
+    // Back Button
+    if (organisation.parent) {
+        const parent = organisation[organisation.parent];
+        organisationBack.hidden = false;
+        organisationBack.dataset.target = organisation.parent;
+        organisationBack.textContent = `← Back to ${parent.name}`;
+    } else {
+        organisationBack.hidden = true;
+        organisationBack.dataset.target = "";
     }
 
-    explorerLabel.textContent = data.label;
-    explorerTitle.textContent = data.title;
+    // Clear current cards
+    organisationGrid.innerHTML = "";
 
-    subRegimentGrid.innerHTML = "";
+    // Children
+    const children = organisation.children || [];
 
-    data.regiments.forEach((regiment, index) => {
+    children.forEach((childId, index) => {
+        const child = organisationData[childId];
+        if (!child)
+            return;
 
         const card = document.createElement("article");
-        card.className = "sub-regiment-card";
+        card.className = "organisation-card";
         card.style.animationDelay = `${index * 0.04}s`;
 
+        // Badge
+        if (child.badge) {
+            const badgeContainer = document.createElement("div");
+            badgeContainer.className = "organisation-badge";
+            const badge = document.createElement("img");
+            badge.src = child.badge;
+            badge.alt = `${child.name} badge`;
+            badge.loading = "lazy";
 
-        /*
-         * BADGE
-         */
-
-        const badgeContainer = document.createElement("div");
-        badgeContainer.className = "sub-regiment-badge";
-
-        const badge = document.createElement("img");
-        badge.src = regiment.badge;
-        badge.alt = `${regiment.name} cap badge`;
-        badge.loading = "lazy";
-
-        badgeContainer.appendChild(badge);
-
-
-        /*
-         * NAME
-         */
-
-        const name = document.createElement("h4");
-        name.textContent = regiment.name;
-
-
-        /*
-         * TYPE
-         * Used mainly for RAC Regular / Reserve
-         */
-
-        if (regiment.type) {
-            const type = document.createElement("span");
-            type.className = "sub-regiment-type";
-            type.textContent = regiment.type;
-            card.appendChild(type);
+            badgeContainer.appendChild(badge);
+            card.appendChild(badgeContainer);
         }
 
+        // Type
+        const type = document.createElement("span");
+        type.className = "organisation-card-type";
+        type.textContent = child.type || "Organisation";
+        card.appendChild(type);
 
-        /*
-         * ADD CONTENT
-         */
-
-        card.appendChild(badgeContainer);
+        // Name
+        const name = document.createElement("h4");
+        name.textContent = child.name;
         card.appendChild(name);
 
+        // Abbreviation
+        if (child.abbreviation) {
+            const abbreviation = document.createElement("small");
+            abbreviation.className = "organisation-abbreviation";
+            abbreviation.textContent = child.abbreviation;
+            card.appendChild(abbreviation);
+        }
 
-        /*
-         * EXTERNAL LINK
-         *
-         * This will become active once a URL
-         * has been added to the regiment data.
-         */
+        // Summary
+        if (child.summary) {
+            const summary = document.createElement("p");
+            summary.textContent = child.summary;
+            card.appendChild(summary);
+        }
 
-        if (regiment.url) {
+        // Child organisations
+        if (child.children && child.children.length) {
+            const explore = document.createElement("button");
+            explore.className = "organisation-card-action";
+            explore.textContent = "Explore →";
+            explore.addEventListener("click", () => {
+                renderOrganisation(childId);
+            });
+            card.appendChild(explore);
+        }
+
+        // External website
+        if (child.url) {
             const link = document.createElement("a");
-            link.className = "sub-regiment-link";
-            link.href = regiment.url;
+            link.className = "organisation-external"
+            link.href = child.url;
             link.target = "_blank";
             link.rel = "noopener noreferrer";
-            link.setAttribute("aria-label", `Visit ${regiment.name} page`);
-            link.textContent = "↗";
-
+            link.textContent = "Official page ↗";
             card.appendChild(link);
         }
 
-        subRegimentGrid.appendChild(card);
-
+        organisationGrid.appendChild(card);
     });
 
-    /*
-     * OPEN EXPLORER
-     */
+    organisationExplorer.classList.add("open");
+}
 
-    regimentExplorer.classList.add("open");
+async function loadOrganisationData() {
+    try {
+        const response = await fetch("data/organisation.json");
 
+        if (!response.ok) {
+            throw new Error(`HTTP error: ${response.status}`);
+        }
 
-    /*
-     * UPDATE BUTTON STATES
-     */
+        data = await response.json();
 
-    document.querySelectorAll(".card-expand").forEach(button => {
-        const isCurrent = button.dataset.expand === category;
-        button.setAttribute("aria-expanded", isCurrent);
-    });
-
-
-    /*
-     * SCROLL INTO VIEW
-     */
-
-    setTimeout(() => {
-        regimentExplorer.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
-
-    }, 100);
+        organisationData = data.organisations;
+        
+        console.log("Organisation data loaded:", organisationData);
+    } catch (error) {
+        console.error("Could not load organisation data:", error);
+    }
 }
 
 document.querySelectorAll(".card-expand").forEach(button => {
     button.addEventListener("click", () => {
-        const category = button.dataset.expand;
-        renderRegiments(category);
+        const organisation = button.dataset.organisation;
+        renderOrganisation(organisation);
+
+        document.querySelectorAll(".card-expand").forEach(otherButton => {
+            otherButton.setAttribute("aria-expanded", "false");
+        });
+
+        button.setAttribute("aria-expanded", "true");
+
+        setTimeout(() => {
+            organisationExplorer.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }, 100);
+    });
+});
+
+organisationBack.addEventListener("click", () => {
+    const target = organisationBack.dataset.target;
+
+    if (target) {
+        renderOrganisation(target);
+    }
+});
+
+organisationClose.addEventListener("click", () => {
+    organisationExplorer.classList.remove("open");
+
+    currentOrganisation = null;
+
+    document.querySelectorAll(".card-expand").forEach(button => {
+        button.setAttribute("aria-expanded", "false");
     });
 });
 
@@ -933,3 +827,5 @@ explorerClose.addEventListener("click", () => {
         button.setAttribute("aria-expanded", "false");
     });
 });
+
+loadOrganisationData();

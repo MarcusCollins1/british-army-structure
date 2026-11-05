@@ -1,0 +1,2095 @@
+{
+  "meta": {
+    "title": "British Army Organisations",
+    "description": "Data used by the interactive British Army structure guide.",
+    "version": "1.0",
+    "lastUpdated": "2026-11-05"
+  },
+
+  "organisations": {
+
+    "infantry": {
+      "name": "Infantry",
+      "shortName": "Infantry",
+      "abbreviation": null,
+      "type": "arm",
+      "category": "combat",
+      "component": "mixed",
+      "parent": null,
+      "badge": "images/cap-badges/infantry.png",
+      "summary": "The Army's close-combat infantry, organised into regiments with Regular and Reserve battalions.",
+      "role": "Close combat",
+      "children": [
+        "coldstream-guards",
+        "grenadier-guards",
+        "irish-guards",
+        "scots-guards",
+        "welsh-guards",
+        "duke-of-lancasters",
+        "mercian",
+        "parachute-regiment",
+        "pwrr",
+        "rifles",
+        "royal-anglian",
+        "royal-gurkha-rifles",
+        "royal-irish",
+        "royal-regiment-fusiliers",
+        "royal-regiment-scotland",
+        "royal-welsh",
+        "royal-yorkshire",
+        "royal-gibraltar"
+      ],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/"
+    },
+
+    "coldstream-guards": {
+      "name": "Coldstream Guards",
+      "shortName": "Coldstream Guards",
+      "abbreviation": null,
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/coldstream-guards.png",
+      "summary": "An infantry regiment of the Foot Guards.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/coldstream-guards/"
+    },
+
+    "grenadier-guards": {
+      "name": "Grenadier Guards",
+      "shortName": "Grenadier Guards",
+      "abbreviation": null,
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/grenadier-guards.png",
+      "summary": "An infantry regiment of the Foot Guards.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/grenadier-guards/"
+    },
+
+    "irish-guards": {
+      "name": "Irish Guards",
+      "shortName": "Irish Guards",
+      "abbreviation": null,
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/irish-guards.png",
+      "summary": "An infantry regiment of the Foot Guards.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/irish-guards/"
+    },
+
+    "scots-guards": {
+      "name": "Scots Guards",
+      "shortName": "Scots Guards",
+      "abbreviation": null,
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/scots-guards.png",
+      "summary": "An infantry regiment of the Foot Guards.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/scots-guards/"
+    },
+
+    "welsh-guards": {
+      "name": "Welsh Guards",
+      "shortName": "Welsh Guards",
+      "abbreviation": null,
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/welsh-guards.png",
+      "summary": "An infantry regiment of the Foot Guards.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/welsh-guards/"
+    },
+
+    "duke-of-lancasters": {
+      "name": "The Duke of Lancaster's Regiment",
+      "shortName": "Duke of Lancaster's Regiment",
+      "abbreviation": "LANCS",
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/duke-of-lancasters.png",
+      "summary": "An infantry regiment of the British Army.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/duke-of-lancasters-regiment/"
+    },
+
+    "mercian": {
+      "name": "The Mercian Regiment",
+      "shortName": "Mercian Regiment",
+      "abbreviation": "MERCIAN",
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/mercian.png",
+      "summary": "An infantry regiment of the British Army.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/mercian-regiment/"
+    },
+
+    "parachute-regiment": {
+      "name": "The Parachute Regiment",
+      "shortName": "Parachute Regiment",
+      "abbreviation": "PARA",
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/parachute-regiment.png",
+      "summary": "The Army's airborne infantry regiment.",
+      "role": "Airborne infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/parachute-regiment/"
+    },
+
+    "pwrr": {
+      "name": "The Princess of Wales's Royal Regiment",
+      "shortName": "Princess of Wales's Royal Regiment",
+      "abbreviation": "PWRR",
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/pwrr.png",
+      "summary": "An infantry regiment of the British Army.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/princess-of-waless-royal-regiment/"
+    },
+
+    "rifles": {
+      "name": "The Rifles",
+      "shortName": "The Rifles",
+      "abbreviation": "RIFLES",
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/rifles.png",
+      "summary": "A large infantry regiment of the British Army.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/rifles/"
+    },
+
+    "royal-anglian": {
+      "name": "The Royal Anglian Regiment",
+      "shortName": "Royal Anglian Regiment",
+      "abbreviation": "R ANGLIAN",
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/royal-anglian.png",
+      "summary": "An infantry regiment of the British Army.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/royal-anglian-regiment/"
+    },
+
+    "royal-gurkha-rifles": {
+      "name": "The Royal Gurkha Rifles",
+      "shortName": "Royal Gurkha Rifles",
+      "abbreviation": "RGR",
+      "type": "regiment",
+      "category": "combat",
+      "component": "regular",
+      "parent": "infantry",
+      "badge": "images/cap-badges/royal-gurkha-rifles.png",
+      "summary": "The infantry regiment of the Brigade of Gurkhas.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/brigade-of-gurkhas/the-royal-gurkha-rifles/"
+    },
+
+    "royal-irish": {
+      "name": "The Royal Irish Regiment",
+      "shortName": "Royal Irish Regiment",
+      "abbreviation": "R IRISH",
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/royal-irish.png",
+      "summary": "An infantry regiment of the British Army.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/royal-irish-regiment/"
+    },
+
+    "royal-regiment-fusiliers": {
+      "name": "The Royal Regiment of Fusiliers",
+      "shortName": "Royal Regiment of Fusiliers",
+      "abbreviation": "RRF",
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/royal-regiment-fusiliers.png",
+      "summary": "An infantry regiment of the British Army.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/royal-regiment-of-fusiliers-1/"
+    },
+
+    "royal-regiment-scotland": {
+      "name": "The Royal Regiment of Scotland",
+      "shortName": "Royal Regiment of Scotland",
+      "abbreviation": "SCOTS",
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/royal-regiment-scotland.png",
+      "summary": "The senior Scottish infantry regiment of the British Army.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/royal-regiment-of-scotland/"
+    },
+
+    "royal-welsh": {
+      "name": "The Royal Welsh",
+      "shortName": "Royal Welsh",
+      "abbreviation": "R WELSH",
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/royal-welsh.png",
+      "summary": "An infantry regiment of the British Army.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/royal-welsh/"
+    },
+
+    "royal-yorkshire": {
+      "name": "The Royal Yorkshire Regiment",
+      "shortName": "Royal Yorkshire Regiment",
+      "abbreviation": "R YORKS",
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/royal-yorkshire.png",
+      "summary": "An infantry regiment of the British Army.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/royal-yorkshire-regiment/"
+    },
+
+    "royal-gibraltar": {
+      "name": "The Royal Gibraltar Regiment",
+      "shortName": "Royal Gibraltar Regiment",
+      "abbreviation": "RG",
+      "type": "regiment",
+      "category": "combat",
+      "component": "mixed",
+      "parent": "infantry",
+      "badge": "images/cap-badges/royal-gibraltar.png",
+      "summary": "The locally raised regiment of British Forces Gibraltar.",
+      "role": "Infantry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/infantry/royal-gibraltar-regiment/"
+    },
+
+
+    "rac": {
+      "name": "Royal Armoured Corps",
+      "shortName": "Royal Armoured Corps",
+      "abbreviation": "RAC",
+      "type": "corps",
+      "category": "combat",
+      "component": "mixed",
+      "parent": null,
+      "badge": "images/cap-badges/royal-armoured-corps.png",
+      "summary": "The Army's mounted close-combat arm, providing armour and mounted reconnaissance.",
+      "role": "Armour and mounted reconnaissance",
+      "children": [
+        "qdg",
+        "household-cavalry",
+        "kings-royal-hussars",
+        "light-dragoons",
+        "queens-royal-hussars",
+        "royal-dragoon-guards",
+        "royal-lancers",
+        "royal-scots-dragoon-guards",
+        "royal-tank-regiment",
+        "queens-own-yeomanry",
+        "royal-wessex-yeomanry",
+        "royal-yeomanry",
+        "scottish-north-irish-yeomanry"
+      ],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-armoured-corps/"
+    },
+
+    "qdg": {
+      "name": "1st The Queen's Dragoon Guards",
+      "shortName": "Queen's Dragoon Guards",
+      "abbreviation": "QDG",
+      "type": "regiment",
+      "category": "combat",
+      "component": "regular",
+      "parent": "rac",
+      "badge": "images/cap-badges/qdg.png",
+      "summary": "A regiment of the Royal Armoured Corps.",
+      "role": "Mounted reconnaissance",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-armoured-corps/1st-the-queens-dragoon-guards/"
+    },
+
+    "household-cavalry": {
+      "name": "Household Cavalry",
+      "shortName": "Household Cavalry",
+      "abbreviation": "HCav",
+      "type": "regiment",
+      "category": "combat",
+      "component": "regular",
+      "parent": "rac",
+      "badge": "images/cap-badges/household-cavalry.png",
+      "summary": "Combines operational armoured cavalry with mounted ceremonial duties.",
+      "role": "Armoured cavalry and ceremonial",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-armoured-corps/household-cavalry-regiment/"
+    },
+
+    "kings-royal-hussars": {
+      "name": "The King's Royal Hussars",
+      "shortName": "King's Royal Hussars",
+      "abbreviation": "KRH",
+      "type": "regiment",
+      "category": "combat",
+      "component": "regular",
+      "parent": "rac",
+      "badge": "images/cap-badges/kings-royal-hussars.png",
+      "summary": "A regiment of the Royal Armoured Corps.",
+      "role": "Armour",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-armoured-corps/the-king-s-royal-hussars/"
+    },
+
+    "light-dragoons": {
+      "name": "The Light Dragoons",
+      "shortName": "Light Dragoons",
+      "abbreviation": "LD",
+      "type": "regiment",
+      "category": "combat",
+      "component": "regular",
+      "parent": "rac",
+      "badge": "images/cap-badges/light-dragoons.png",
+      "summary": "A regiment of the Royal Armoured Corps.",
+      "role": "Light cavalry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-armoured-corps/light-dragoons/"
+    },
+
+    "queens-royal-hussars": {
+      "name": "The Queen's Royal Hussars",
+      "shortName": "Queen's Royal Hussars",
+      "abbreviation": "QRH",
+      "type": "regiment",
+      "category": "combat",
+      "component": "regular",
+      "parent": "rac",
+      "badge": "images/cap-badges/queens-royal-hussars.png",
+      "summary": "A regiment of the Royal Armoured Corps.",
+      "role": "Armour",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-armoured-corps/the-queens-royal-hussars/"
+    },
+
+    "royal-dragoon-guards": {
+      "name": "The Royal Dragoon Guards",
+      "shortName": "Royal Dragoon Guards",
+      "abbreviation": "RDG",
+      "type": "regiment",
+      "category": "combat",
+      "component": "regular",
+      "parent": "rac",
+      "badge": "images/cap-badges/royal-dragoon-guards.png",
+      "summary": "A regiment of the Royal Armoured Corps.",
+      "role": "Armoured cavalry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-armoured-corps/royal-dragoon-guards/"
+    },
+
+    "royal-lancers": {
+      "name": "The Royal Lancers (Queen Elizabeths' Own)",
+      "shortName": "Royal Lancers",
+      "abbreviation": "RL",
+      "type": "regiment",
+      "category": "combat",
+      "component": "regular",
+      "parent": "rac",
+      "badge": "images/cap-badges/royal-lancers.png",
+      "summary": "A regiment of the Royal Armoured Corps.",
+      "role": "Armoured cavalry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-armoured-corps/royal-lancers/"
+    },
+
+    "royal-scots-dragoon-guards": {
+      "name": "The Royal Scots Dragoon Guards",
+      "shortName": "Royal Scots Dragoon Guards",
+      "abbreviation": "SCOTS DG",
+      "type": "regiment",
+      "category": "combat",
+      "component": "regular",
+      "parent": "rac",
+      "badge": "images/cap-badges/royal-scots-dragoon-guards.png",
+      "summary": "A regiment of the Royal Armoured Corps.",
+      "role": "Cavalry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-armoured-corps/royal-scots-dragoon-guards/"
+    },
+
+    "royal-tank-regiment": {
+      "name": "The Royal Tank Regiment",
+      "shortName": "Royal Tank Regiment",
+      "abbreviation": "RTR",
+      "type": "regiment",
+      "category": "combat",
+      "component": "regular",
+      "parent": "rac",
+      "badge": "images/cap-badges/royal-tank-regiment.png",
+      "summary": "A regiment of the Royal Armoured Corps.",
+      "role": "Armour",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-armoured-corps/royal-tank-regiment/"
+    },
+
+    "queens-own-yeomanry": {
+      "name": "The Queen's Own Yeomanry",
+      "shortName": "Queen's Own Yeomanry",
+      "abbreviation": "QOY",
+      "type": "regiment",
+      "category": "combat",
+      "component": "reserve",
+      "parent": "rac",
+      "badge": "images/cap-badges/queens-own-yeomanry.png",
+      "summary": "An Army Reserve regiment of the Royal Armoured Corps.",
+      "role": "Cavalry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-armoured-corps/queens-own-yeomanry/"
+    },
+
+    "royal-wessex-yeomanry": {
+      "name": "The Royal Wessex Yeomanry",
+      "shortName": "Royal Wessex Yeomanry",
+      "abbreviation": "RWxY",
+      "type": "regiment",
+      "category": "combat",
+      "component": "reserve",
+      "parent": "rac",
+      "badge": "images/cap-badges/royal-wessex-yeomanry.png",
+      "summary": "An Army Reserve regiment of the Royal Armoured Corps.",
+      "role": "Armour",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-armoured-corps/royal-wessex-yeomanry/"
+    },
+
+    "royal-yeomanry": {
+      "name": "The Royal Yeomanry",
+      "shortName": "Royal Yeomanry",
+      "abbreviation": "RY",
+      "type": "regiment",
+      "category": "combat",
+      "component": "reserve",
+      "parent": "rac",
+      "badge": "images/cap-badges/royal-yeomanry.png",
+      "summary": "An Army Reserve regiment of the Royal Armoured Corps.",
+      "role": "Cavalry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-armoured-corps/royal-yeomanry/"
+    },
+
+    "scottish-north-irish-yeomanry": {
+      "name": "The Scottish and North Irish Yeomanry",
+      "shortName": "Scottish and North Irish Yeomanry",
+      "abbreviation": "SNIY",
+      "type": "regiment",
+      "category": "combat",
+      "component": "reserve",
+      "parent": "rac",
+      "badge": "images/cap-badges/scottish-north-irish-yeomanry.png",
+      "summary": "An Army Reserve regiment of the Royal Armoured Corps.",
+      "role": "Cavalry",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-armoured-corps/scottish-and-north-irish-yeomanry/"
+    },
+
+
+    "agc": {
+      "name": "Adjutant General's Corps",
+      "shortName": "Adjutant General's Corps",
+      "abbreviation": "AGC",
+      "type": "corps",
+      "category": "service",
+      "component": "mixed",
+      "parent": null,
+      "badge": "images/cap-badges/agc.png",
+      "summary": "Provides personnel, administrative, policing, educational and legal capabilities across the Army.",
+      "role": "Personnel and specialist support",
+      "children": [
+        "sps",
+        "provost",
+        "ets",
+        "als"
+      ],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/adjutant-generals-corps/"
+    },
+
+    "sps": {
+      "name": "Staff & Personnel Support",
+      "shortName": "Staff & Personnel Support",
+      "abbreviation": "SPS",
+      "type": "branch",
+      "category": "service",
+      "component": "mixed",
+      "parent": "agc",
+      "badge": "images/cap-badges/agc-sps.png",
+      "summary": "Provides personnel administration, financial management and administrative staff support.",
+      "role": "Personnel administration",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/adjutant-generals-corps/staff-and-personnel-support/"
+    },
+
+    "provost": {
+      "name": "Provost Branch",
+      "shortName": "Provost",
+      "abbreviation": null,
+      "type": "branch",
+      "category": "service",
+      "component": "mixed",
+      "parent": "agc",
+      "badge": "images/cap-badges/agc-provost.png",
+      "summary": "Provides specialist military policing, custody, detention and guarding capabilities.",
+      "role": "Provost",
+      "children": [
+        "rmp",
+        "mps",
+        "mpgs"
+      ],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/adjutant-generals-corps/provost-branch/"
+    },
+
+    "ets": {
+      "name": "Educational & Training Services",
+      "shortName": "Educational & Training Services",
+      "abbreviation": "ETS",
+      "type": "service",
+      "category": "service",
+      "component": "mixed",
+      "parent": "agc",
+      "badge": "images/cap-badges/ets.png",
+      "summary": "Provides professional education, learning and development support to Army personnel.",
+      "role": "Education and training",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/adjutant-generals-corps/educational-and-training-services/"
+    },
+
+    "als": {
+      "name": "Army Legal Services",
+      "shortName": "Army Legal Services",
+      "abbreviation": "ALS",
+      "type": "service",
+      "category": "service",
+      "component": "regular",
+      "parent": "agc",
+      "badge": "images/cap-badges/als.png",
+      "summary": "Provides professional legal services to the Army and wider Defence.",
+      "role": "Legal services",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/adjutant-generals-corps/army-legal-services/"
+    },
+
+    "rmp": {
+      "name": "Royal Military Police",
+      "shortName": "Royal Military Police",
+      "abbreviation": "RMP",
+      "type": "organisation",
+      "category": "service",
+      "component": "mixed",
+      "parent": "provost",
+      "badge": "images/cap-badges/rmp.png",
+      "summary": "Provides specialist military policing and investigative capabilities.",
+      "role": "Military policing",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/adjutant-generals-corps/provost-branch/royal-military-police/"
+    },
+
+    "mps": {
+      "name": "Military Provost Staff",
+      "shortName": "Military Provost Staff",
+      "abbreviation": "MPS",
+      "type": "organisation",
+      "category": "service",
+      "component": "mixed",
+      "parent": "provost",
+      "badge": "images/cap-badges/mps.png",
+      "summary": "Provides specialist military custody and detention capabilities.",
+      "role": "Custody and detention",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/adjutant-generals-corps/provost-branch/military-provost-staff/"
+    },
+
+    "mpgs": {
+      "name": "Military Provost Guard Service",
+      "shortName": "Military Provost Guard Service",
+      "abbreviation": "MPGS",
+      "type": "organisation",
+      "category": "service",
+      "component": "regular",
+      "parent": "provost",
+      "badge": "images/cap-badges/mpgs.png",
+      "summary": "Provides armed guarding and security at Defence establishments.",
+      "role": "Protective security",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/adjutant-generals-corps/provost-branch/military-provost-guard-service/"
+    },
+
+
+    "artillery": {
+      "name": "Royal Artillery",
+      "shortName": "Royal Artillery",
+      "abbreviation": "RA",
+      "type": "arm",
+      "category": "support",
+      "component": "mixed",
+      "parent": null,
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "Provides fires, air defence, surveillance, target acquisition and other specialist capabilities.",
+      "role": "Fires and air defence",
+      "children": [
+        "1-rha",
+        "3-rha",
+        "4-ra",
+        "5-ra",
+        "7-rha",
+        "12-ra",
+        "14-ra",
+        "16-ra",
+        "19-ra",
+        "26-ra",
+        "29-ra",
+        "32-ra",
+        "47-ra",
+        "kings-troop",
+        "100-ra",
+        "101-ra",
+        "103-ra",
+        "104-ra",
+        "105-ra",
+        "106-ra",
+        "hac"
+      ],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/"
+    },
+
+    "1-rha": {
+      "name": "1st Regiment Royal Horse Artillery",
+      "shortName": "1 RHA",
+      "abbreviation": "1 RHA",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "A Regular regiment of the Royal Artillery.",
+      "role": "Artillery",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/1st-regiment-royal-horse-artillery/"
+    },
+
+    "3-rha": {
+      "name": "3rd Regiment Royal Horse Artillery",
+      "shortName": "3 RHA",
+      "abbreviation": "3 RHA",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "A Regular regiment of the Royal Artillery.",
+      "role": "Artillery",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/3rd-regiment-royal-horse-artillery/"
+    },
+
+    "4-ra": {
+      "name": "4th Regiment Royal Artillery",
+      "shortName": "4 Regt RA",
+      "abbreviation": "4 RA",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "A Regular regiment of the Royal Artillery.",
+      "role": "Artillery",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/4th-regiment-royal-artillery/"
+    },
+
+    "5-ra": {
+      "name": "5th Regiment Royal Artillery",
+      "shortName": "5 Regt RA",
+      "abbreviation": "5 RA",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "A Regular regiment of the Royal Artillery.",
+      "role": "Surveillance and target acquisition",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/5th-regiment-royal-artillery/"
+    },
+
+    "7-rha": {
+      "name": "7th Parachute Regiment Royal Horse Artillery",
+      "shortName": "7 Para RHA",
+      "abbreviation": "7 PARA RHA",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "The airborne artillery regiment of the Royal Artillery.",
+      "role": "Airborne artillery",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/7th-parachute-regiment-royal-horse-artillery/"
+    },
+
+    "12-ra": {
+      "name": "12th Regiment Royal Artillery",
+      "shortName": "12 Regt RA",
+      "abbreviation": "12 RA",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "A Regular regiment of the Royal Artillery.",
+      "role": "Air defence",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/12th-regiment-royal-artillery/"
+    },
+
+    "14-ra": {
+      "name": "14th Regiment Royal Artillery",
+      "shortName": "14 Regt RA",
+      "abbreviation": "14 RA",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "A Regular regiment of the Royal Artillery.",
+      "role": "Training",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/14th-regiment-royal-artillery/"
+    },
+
+    "16-ra": {
+      "name": "16th Regiment Royal Artillery",
+      "shortName": "16 Regt RA",
+      "abbreviation": "16 RA",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "A Regular regiment of the Royal Artillery.",
+      "role": "Air defence",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/16th-regiment-royal-artillery/"
+    },
+
+    "19-ra": {
+      "name": "19th Regiment Royal Artillery",
+      "shortName": "19 Regt RA",
+      "abbreviation": "19 RA",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "A Regular regiment of the Royal Artillery.",
+      "role": "Artillery",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/19th-regiment-royal-artillery/"
+    },
+
+    "26-ra": {
+      "name": "26th Regiment Royal Artillery",
+      "shortName": "26 Regt RA",
+      "abbreviation": "26 RA",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "A Regular regiment of the Royal Artillery.",
+      "role": "Artillery",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/26th-regiment-royal-artillery/"
+    },
+
+    "29-ra": {
+      "name": "29th Commando Regiment Royal Artillery",
+      "shortName": "29 Commando RA",
+      "abbreviation": "29 CDO RA",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "The Royal Artillery's Commando-trained regiment.",
+      "role": "Commando artillery",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/29th-commando-regiment-royal-artillery/"
+    },
+
+    "32-ra": {
+      "name": "32nd Regiment Royal Artillery",
+      "shortName": "32 Regt RA",
+      "abbreviation": "32 RA",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "A Regular regiment of the Royal Artillery.",
+      "role": "Artillery",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/32nd-regiment-royal-artillery/"
+    },
+
+    "47-ra": {
+      "name": "47th Regiment Royal Artillery",
+      "shortName": "47 Regt RA",
+      "abbreviation": "47 RA",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "A Regular regiment of the Royal Artillery.",
+      "role": "Artillery",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/47th-regiment-royal-artillery/"
+    },
+
+    "kings-troop": {
+      "name": "The King's Troop Royal Horse Artillery",
+      "shortName": "King's Troop RHA",
+      "abbreviation": "KTRHA",
+      "type": "unit",
+      "category": "support",
+      "component": "regular",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "The Royal Horse Artillery's ceremonial saluting battery.",
+      "role": "Ceremonial",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/the-kings-troop-royal-horse-artillery/"
+    },
+
+    "100-ra": {
+      "name": "100th Regiment Royal Artillery",
+      "shortName": "100 Regt RA",
+      "abbreviation": "100 RA",
+      "type": "regiment",
+      "category": "support",
+      "component": "reserve",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "An Army Reserve regiment of the Royal Artillery.",
+      "role": "Artillery",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/100th-regiment-royal-artillery/"
+    },
+
+    "101-ra": {
+      "name": "101st Regiment Royal Artillery",
+      "shortName": "101 Regt RA",
+      "abbreviation": "101 RA",
+      "type": "regiment",
+      "category": "support",
+      "component": "reserve",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "An Army Reserve regiment of the Royal Artillery.",
+      "role": "Artillery",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/101st-regiment-royal-artillery/"
+    },
+
+    "103-ra": {
+      "name": "103rd Regiment Royal Artillery",
+      "shortName": "103 Regt RA",
+      "abbreviation": "103 RA",
+      "type": "regiment",
+      "category": "support",
+      "component": "reserve",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "An Army Reserve regiment of the Royal Artillery.",
+      "role": "Artillery",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/103rd-regiment-royal-artillery/"
+    },
+
+    "104-ra": {
+      "name": "104th Regiment Royal Artillery",
+      "shortName": "104 Regt RA",
+      "abbreviation": "104 RA",
+      "type": "regiment",
+      "category": "support",
+      "component": "reserve",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "An Army Reserve regiment of the Royal Artillery.",
+      "role": "Artillery",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/104th-regiment-royal-artillery/"
+    },
+
+    "105-ra": {
+      "name": "105th Regiment Royal Artillery",
+      "shortName": "105 Regt RA",
+      "abbreviation": "105 RA",
+      "type": "regiment",
+      "category": "support",
+      "component": "reserve",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "An Army Reserve regiment of the Royal Artillery.",
+      "role": "Artillery",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/105th-regiment-royal-artillery/"
+    },
+
+    "106-ra": {
+      "name": "106th (Yeomanry) Regiment Royal Artillery",
+      "shortName": "106 Regt RA",
+      "abbreviation": "106 RA",
+      "type": "regiment",
+      "category": "support",
+      "component": "reserve",
+      "parent": "artillery",
+      "badge": "images/cap-badges/royal-artillery.png",
+      "summary": "An Army Reserve regiment of the Royal Artillery.",
+      "role": "Air defence",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/106th-yeomanry-regiment-royal-artillery/"
+    },
+
+    "hac": {
+      "name": "Honourable Artillery Company",
+      "shortName": "Honourable Artillery Company",
+      "abbreviation": "HAC",
+      "type": "regiment",
+      "category": "support",
+      "component": "reserve",
+      "parent": "artillery",
+      "badge": "images/cap-badges/hac.png",
+      "summary": "An Army Reserve regiment with specialist surveillance and ceremonial roles.",
+      "role": "Surveillance and ceremonial",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-artillery/honourable-artillery-company/"
+    },
+
+
+    "engineers": {
+      "name": "Corps of Royal Engineers",
+      "shortName": "Royal Engineers",
+      "abbreviation": "RE",
+      "type": "corps",
+      "category": "support",
+      "component": "mixed",
+      "parent": null,
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "Provides combat engineering and specialist engineering capabilities across the Army.",
+      "role": "Military engineering",
+      "children": [
+        "21-engineer",
+        "22-engineer",
+        "23-parachute-engineer",
+        "24-commando-engineer",
+        "26-engineer",
+        "28-engineer",
+        "32-engineer",
+        "33-engineer",
+        "35-engineer",
+        "36-engineer",
+        "39-engineer",
+        "42-engineer",
+        "71-engineer",
+        "75-engineer",
+        "101-engineer",
+        "rmonre"
+      ],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/corps-of-royal-engineers/"
+    },
+
+    "21-engineer": {
+      "name": "21 Engineer Regiment",
+      "abbreviation": "21 Engr Regt",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "engineers",
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "A Regular regiment of the Corps of Royal Engineers.",
+      "role": "Military engineering",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/corps-of-royal-engineers/21-engineer-regiment/"
+    },
+
+    "22-engineer": {
+      "name": "22 Engineer Regiment",
+      "abbreviation": "22 Engr Regt",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "engineers",
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "A Regular regiment of the Corps of Royal Engineers.",
+      "role": "Military engineering",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/corps-of-royal-engineers/22-engineer-regiment/"
+    },
+
+    "23-parachute-engineer": {
+      "name": "23 Parachute Engineer Regiment",
+      "abbreviation": "23 Para Engr Regt",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "engineers",
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "The Royal Engineers' airborne engineer regiment.",
+      "role": "Airborne engineering",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/corps-of-royal-engineers/23-parachute-engineer-regiment/"
+    },
+
+    "24-commando-engineer": {
+      "name": "24 Commando Royal Engineers",
+      "abbreviation": "24 Cdo RE",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "engineers",
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "Provides Commando-trained engineering support.",
+      "role": "Commando engineering",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/corps-of-royal-engineers/24-commando-royal-engineers/"
+    },
+
+    "26-engineer": {
+      "name": "26 Engineer Regiment",
+      "abbreviation": "26 Engr Regt",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "engineers",
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "A Regular regiment of the Corps of Royal Engineers.",
+      "role": "Military engineering",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/corps-of-royal-engineers/26-engineer-regiment/"
+    },
+
+    "28-engineer": {
+      "name": "28 Engineer Regiment (C-CBRN)",
+      "abbreviation": "28 Engr Regt",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "engineers",
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "Provides specialist counter-CBRN engineering capabilities.",
+      "role": "Counter-CBRN",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/corps-of-royal-engineers/28-engineer-regiment-c-cbrn/"
+    },
+
+    "32-engineer": {
+      "name": "32 Engineer Regiment",
+      "abbreviation": "32 Engr Regt",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "engineers",
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "A Regular regiment of the Corps of Royal Engineers.",
+      "role": "Military engineering",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/corps-of-royal-engineers/32-engineer-regiment/"
+    },
+
+    "33-engineer": {
+      "name": "33 Engineer Regiment (EOD&S)",
+      "abbreviation": "33 Engr Regt",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "engineers",
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "Provides explosive ordnance disposal and search capabilities.",
+      "role": "EOD and search",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/corps-of-royal-engineers/33-engineer-regiment-eods/"
+    },
+
+    "35-engineer": {
+      "name": "35 Engineer Regiment (EOD&S)",
+      "abbreviation": "35 Engr Regt",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "engineers",
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "Provides explosive ordnance disposal and search capabilities.",
+      "role": "EOD and search",
+      "children": [],
+      "url": null
+    },
+
+    "36-engineer": {
+      "name": "36 Engineer Regiment",
+      "abbreviation": "36 Engr Regt",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "engineers",
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "A Regular regiment of the Corps of Royal Engineers.",
+      "role": "Military engineering",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/corps-of-royal-engineers/36-engineer-regiment/"
+    },
+
+    "39-engineer": {
+      "name": "39 Engineer Regiment",
+      "abbreviation": "39 Engr Regt",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "engineers",
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "A specialist regiment of the Corps of Royal Engineers.",
+      "role": "Specialist engineering",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/corps-of-royal-engineers/39-engineer-regiment/"
+    },
+
+    "42-engineer": {
+      "name": "42 Engineer Regiment (Geographic)",
+      "abbreviation": "42 Engr Regt",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "engineers",
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "Provides specialist geographic support.",
+      "role": "Geographic support",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/corps-of-royal-engineers/42-engineer-regiment-geographic/"
+    },
+
+    "71-engineer": {
+      "name": "71 Engineer Regiment",
+      "abbreviation": "71 Engr Regt",
+      "type": "regiment",
+      "category": "support",
+      "component": "reserve",
+      "parent": "engineers",
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "An Army Reserve regiment of the Corps of Royal Engineers.",
+      "role": "Military engineering",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/corps-of-royal-engineers/71-engineer-regiment/"
+    },
+
+    "75-engineer": {
+      "name": "75 Engineer Regiment",
+      "abbreviation": "75 Engr Regt",
+      "type": "regiment",
+      "category": "support",
+      "component": "reserve",
+      "parent": "engineers",
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "An Army Reserve regiment of the Corps of Royal Engineers.",
+      "role": "Military engineering",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/corps-of-royal-engineers/75-engineer-regiment-reserve/"
+    },
+
+    "101-engineer": {
+      "name": "101 (City of London) Engineer Regiment (EOD&S)",
+      "abbreviation": "101 Engr Regt",
+      "type": "regiment",
+      "category": "support",
+      "component": "reserve",
+      "parent": "engineers",
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "An Army Reserve explosive ordnance disposal and search regiment.",
+      "role": "EOD and search",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/corps-of-royal-engineers/101-engineer-regiment-eods/"
+    },
+
+    "rmonre": {
+      "name": "Royal Monmouthshire Royal Engineers (Militia)",
+      "shortName": "Royal Monmouthshire Royal Engineers",
+      "abbreviation": "R MON RE(M)",
+      "type": "regiment",
+      "category": "support",
+      "component": "reserve",
+      "parent": "engineers",
+      "badge": "images/cap-badges/royal-engineers.png",
+      "summary": "A Reserve regiment of the Corps of Royal Engineers.",
+      "role": "Military engineering",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/corps-of-royal-engineers/the-royal-monmouthshire-royal-engineers-militia/"
+    },
+
+
+    "signals": {
+      "name": "Royal Corps of Signals",
+      "shortName": "Royal Signals",
+      "abbreviation": "R SIGNALS",
+      "type": "corps",
+      "category": "support",
+      "component": "mixed",
+      "parent": null,
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "Provides communications, networks, information services and specialist digital capabilities.",
+      "role": "Communications and information systems",
+      "children": [
+        "1-signal",
+        "2-signal",
+        "3-div-signal",
+        "10-signal",
+        "11-signal",
+        "13-signal",
+        "14-signal",
+        "16-signal",
+        "21-signal",
+        "22-signal",
+        "30-signal",
+        "32-signal",
+        "37-signal",
+        "39-signal",
+        "71-signal",
+        "jssu-volunteers"
+      ],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/"
+    },
+
+    "1-signal": {
+      "name": "1 Signal Regiment",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "signals",
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "A regiment of the Royal Corps of Signals.",
+      "role": "Communications",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/1-signal-regiment/"
+    },
+
+    "2-signal": {
+      "name": "2 Signal Regiment",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "signals",
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "A regiment of the Royal Corps of Signals.",
+      "role": "Communications",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/2-signal-regiment/"
+    },
+
+    "3-div-signal": {
+      "name": "3 (UK) Division Signal Regiment",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "signals",
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "Provides communications support to 3rd (United Kingdom) Division.",
+      "role": "Divisional communications",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/3-uk-division-signal-regiment/"
+    },
+
+    "10-signal": {
+      "name": "10 Signal Regiment",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "signals",
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "A regiment of the Royal Corps of Signals.",
+      "role": "Communications",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/10-signal-regiment/"
+    },
+
+    "11-signal": {
+      "name": "11 (Royal School of Signals) Signal Regiment",
+      "type": "training-regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "signals",
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "Provides training within the Royal Corps of Signals.",
+      "role": "Training",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/11-royal-school-of-signals-signal-regiment/"
+    },
+
+    "13-signal": {
+      "name": "13 Signal Regiment",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "signals",
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "A specialist regiment of the Royal Corps of Signals.",
+      "role": "Signals",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/13-signal-regiment/"
+    },
+
+    "14-signal": {
+      "name": "14 Signal Regiment",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "signals",
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "A specialist regiment of the Royal Corps of Signals.",
+      "role": "Signals",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/14-signal-regiment-electronic-warfare/"
+    },
+
+    "16-signal": {
+      "name": "16 Signal Regiment",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "signals",
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "A regiment of the Royal Corps of Signals.",
+      "role": "Communications",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/16-signal-regiment/"
+    },
+
+    "21-signal": {
+      "name": "21 Signal Regiment",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "signals",
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "A regiment of the Royal Corps of Signals.",
+      "role": "Communications",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/21-signal-regiment/"
+    },
+
+    "22-signal": {
+      "name": "22 Signal Regiment",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "signals",
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "A regiment of the Royal Corps of Signals.",
+      "role": "Communications",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/22-signal-regiment/"
+    },
+
+    "30-signal": {
+      "name": "30 Signal Regiment",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "signals",
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "A regiment of the Royal Corps of Signals.",
+      "role": "Communications",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/30-signal-regiment/"
+    },
+
+    "32-signal": {
+      "name": "32 Signal Regiment",
+      "type": "regiment",
+      "category": "support",
+      "component": "reserve",
+      "parent": "signals",
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "An Army Reserve regiment of the Royal Corps of Signals.",
+      "role": "Communications",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/32-signal-regiment/"
+    },
+
+    "37-signal": {
+      "name": "37 Signal Regiment",
+      "type": "regiment",
+      "category": "support",
+      "component": "reserve",
+      "parent": "signals",
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "An Army Reserve regiment of the Royal Corps of Signals.",
+      "role": "Communications",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/37-signal-regiment/"
+    },
+
+    "39-signal": {
+      "name": "39 Signal Regiment",
+      "type": "regiment",
+      "category": "support",
+      "component": "reserve",
+      "parent": "signals",
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "An Army Reserve regiment of the Royal Corps of Signals.",
+      "role": "Communications",
+      "children": [],
+      "url": null
+    },
+
+    "71-signal": {
+      "name": "71 Signal Regiment",
+      "type": "regiment",
+      "category": "support",
+      "component": "reserve",
+      "parent": "signals",
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "An Army Reserve regiment of the Royal Corps of Signals.",
+      "role": "Communications",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/71-signal-regiment/"
+    },
+
+    "jssu-volunteers": {
+      "name": "Joint Service Signals Unit (Volunteers)",
+      "shortName": "JSSU (Volunteers)",
+      "abbreviation": "JSSU(V)",
+      "type": "unit",
+      "category": "support",
+      "component": "reserve",
+      "parent": "signals",
+      "badge": "images/cap-badges/royal-signals.png",
+      "summary": "A specialist Reserve signals organisation.",
+      "role": "Specialist signals",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/joint-service-signals-unit-volunteers/"
+    },
+
+
+    "rlc": {
+      "name": "Royal Logistic Corps",
+      "shortName": "Royal Logistic Corps",
+      "abbreviation": "RLC",
+      "type": "corps",
+      "category": "service",
+      "component": "mixed",
+      "parent": null,
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "Provides logistics including transport, supply, distribution, movement, catering, ammunition and specialist support.",
+      "role": "Logistics",
+      "children": [
+        "rlc-regular",
+        "rlc-reserve"
+      ],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/"
+    },
+
+    "rlc-regular": {
+      "name": "Regular Regiments",
+      "shortName": "Regular",
+      "abbreviation": null,
+      "type": "group",
+      "category": "service",
+      "component": "regular",
+      "parent": "rlc",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "Regular regiments and specialist units of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [
+        "1-rlc",
+        "4-rlc",
+        "6-rlc",
+        "7-rlc",
+        "9-rlc",
+        "10-qoglr",
+        "11-eod-rlc",
+        "13-aasr",
+        "17-port-maritime",
+        "25-training-rlc",
+        "27-rlc",
+        "29-rlc"
+      ],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/regular-units/"
+    },
+
+    "rlc-reserve": {
+      "name": "Reserve Regiments",
+      "shortName": "Army Reserve",
+      "abbreviation": null,
+      "type": "group",
+      "category": "service",
+      "component": "reserve",
+      "parent": "rlc",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "Army Reserve regiments of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [
+        "150-rlc",
+        "151-rlc",
+        "152-rlc",
+        "154-rlc",
+        "156-rlc",
+        "157-rlc",
+        "158-rlc",
+        "159-rlc",
+        "162-rlc",
+        "165-port-rlc",
+        "167-catering-rlc"
+      ],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/reserve-units/"
+    },
+
+    "1-rlc": {
+      "name": "1 Regiment RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "regular",
+      "parent": "rlc-regular",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "A Regular regiment of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/regular-units/1-regiment-rlc/"
+    },
+
+    "4-rlc": {
+      "name": "4 Regiment RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "regular",
+      "parent": "rlc-regular",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "A Regular regiment of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/regular-units/4-regiment-rlc/"
+    },
+
+    "6-rlc": {
+      "name": "6 Regiment RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "regular",
+      "parent": "rlc-regular",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "A Regular regiment of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/regular-units/6-regiment-rlc/"
+    },
+
+    "7-rlc": {
+      "name": "7 Regiment RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "regular",
+      "parent": "rlc-regular",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "A Regular regiment of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/regular-units/7-regiment-rlc/"
+    },
+
+    "9-rlc": {
+      "name": "9 Regiment RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "regular",
+      "parent": "rlc-regular",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "A Regular regiment of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/regular-units/9-regiment-rlc/"
+    },
+
+    "10-qoglr": {
+      "name": "10 Queen's Own Gurkha Logistic Regiment",
+      "shortName": "10 QOGLR",
+      "abbreviation": "10 QOGLR",
+      "type": "regiment",
+      "category": "service",
+      "component": "regular",
+      "parent": "rlc-regular",
+      "badge": "images/cap-badges/10-qoglr.png",
+      "summary": "A Gurkha logistics regiment.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/brigade-of-gurkhas/queens-own-gurkha-logistic-regiment/"
+    },
+
+    "11-eod-rlc": {
+      "name": "11 Explosive Ordnance Disposal and Search Regiment RLC",
+      "shortName": "11 EOD&S Regiment RLC",
+      "abbreviation": "11 EOD&S RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "regular",
+      "parent": "rlc-regular",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "Provides specialist explosive ordnance disposal and search capabilities.",
+      "role": "EOD and search",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/regular-units/11-explosive-ordnance-disposal-and-search-regiment/"
+    },
+
+    "13-aasr": {
+      "name": "13 Air Assault Support Regiment RLC",
+      "shortName": "13 Air Assault Support Regiment",
+      "abbreviation": "13 AASR",
+      "type": "regiment",
+      "category": "service",
+      "component": "regular",
+      "parent": "rlc-regular",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "Provides logistics support to airborne forces.",
+      "role": "Air assault logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/regular-units/13-air-assault-support-regiment-rlc/"
+    },
+
+    "17-port-maritime": {
+      "name": "17 Port and Maritime Regiment RLC",
+      "shortName": "17 Port & Maritime Regiment",
+      "abbreviation": "17 P&M RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "regular",
+      "parent": "rlc-regular",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "Provides specialist port and maritime logistics capabilities.",
+      "role": "Port and maritime logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/regular-units/17-port-and-maritime-regiment-rlc/"
+    },
+
+    "25-training-rlc": {
+      "name": "25 Training Regiment RLC",
+      "shortName": "25 Training Regiment",
+      "abbreviation": "25 Trg Regt RLC",
+      "type": "training-regiment",
+      "category": "service",
+      "component": "regular",
+      "parent": "rlc-regular",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "A training regiment of the Royal Logistic Corps.",
+      "role": "Training",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/regular-units/25-training-regiment-rlc/"
+    },
+
+    "27-rlc": {
+      "name": "27 Regiment RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "regular",
+      "parent": "rlc-regular",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "A Regular regiment of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/regular-units/27-regiment-rlc/"
+    },
+
+    "29-rlc": {
+      "name": "29 Regiment RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "regular",
+      "parent": "rlc-regular",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "A Regular regiment of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/regular-units/29-regiment-rlc/"
+    },
+
+    "150-rlc": {
+      "name": "150 Regiment RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "reserve",
+      "parent": "rlc-reserve",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "An Army Reserve regiment of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/reserve-units/150-regiment-rlc/"
+    },
+
+    "151-rlc": {
+      "name": "151 Regiment RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "reserve",
+      "parent": "rlc-reserve",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "An Army Reserve regiment of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/reserve-units/151-regiment-rlc/"
+    },
+
+    "152-rlc": {
+      "name": "152 Regiment RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "reserve",
+      "parent": "rlc-reserve",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "An Army Reserve regiment of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/reserve-units/152-regiment-rlc/"
+    },
+
+    "154-rlc": {
+      "name": "154 Regiment RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "reserve",
+      "parent": "rlc-reserve",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "An Army Reserve regiment of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/reserve-units/154-regiment-rlc/"
+    },
+
+    "156-rlc": {
+      "name": "156 Regiment RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "reserve",
+      "parent": "rlc-reserve",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "An Army Reserve regiment of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/reserve-units/156-regiment-rlc/"
+    },
+
+    "157-rlc": {
+      "name": "157 Regiment RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "reserve",
+      "parent": "rlc-reserve",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "An Army Reserve regiment of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/reserve-units/157-regiment-rlc/"
+    },
+
+    "158-rlc": {
+      "name": "158 Regiment RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "reserve",
+      "parent": "rlc-reserve",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "An Army Reserve regiment of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/reserve-units/158-regiment-rlc/"
+    },
+
+    "159-rlc": {
+      "name": "159 Regiment RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "reserve",
+      "parent": "rlc-reserve",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "An Army Reserve regiment of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/reserve-units/159-regiment-rlc/"
+    },
+
+    "162-rlc": {
+      "name": "162 Regiment RLC",
+      "type": "regiment",
+      "category": "service",
+      "component": "reserve",
+      "parent": "rlc-reserve",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "An Army Reserve regiment of the Royal Logistic Corps.",
+      "role": "Logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/reserve-units/162-regiment-rlc/"
+    },
+
+    "165-port-rlc": {
+      "name": "165 Port and Maritime Regiment RLC",
+      "shortName": "165 Port & Maritime Regiment",
+      "type": "regiment",
+      "category": "service",
+      "component": "reserve",
+      "parent": "rlc-reserve",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "An Army Reserve port and maritime logistics regiment.",
+      "role": "Port and maritime logistics",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/reserve-units/165-port-and-maritime-regiment-rlc/"
+    },
+
+    "167-catering-rlc": {
+      "name": "167 Catering Support Regiment RLC",
+      "shortName": "167 Catering Support Regiment",
+      "type": "regiment",
+      "category": "service",
+      "component": "reserve",
+      "parent": "rlc-reserve",
+      "badge": "images/cap-badges/rlc.png",
+      "summary": "An Army Reserve catering support regiment.",
+      "role": "Catering support",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-logistic-corps/reserve-units/167-regiment-rlc/"
+    },
+
+
+    "reme": {
+      "name": "Corps of Royal Electrical and Mechanical Engineers",
+      "shortName": "REME",
+      "abbreviation": "REME",
+      "type": "corps",
+      "category": "service",
+      "component": "mixed",
+      "parent": null,
+      "badge": "images/cap-badges/reme.png",
+      "summary": "Provides engineering maintenance, repair and technical support to Army equipment.",
+      "role": "Equipment support",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/royal-electrical-and-mechanical-engineers/"
+    },
+
+    "army-air-corps": {
+      "name": "Army Air Corps",
+      "shortName": "Army Air Corps",
+      "abbreviation": "AAC",
+      "type": "corps",
+      "category": "support",
+      "component": "mixed",
+      "parent": null,
+      "badge": "images/cap-badges/army-air-corps.png",
+      "summary": "Provides the Army's aviation capability.",
+      "role": "Army aviation",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/army-air-corps/"
+    },
+
+    "intelligence-corps": {
+      "name": "Intelligence Corps",
+      "shortName": "Intelligence Corps",
+      "abbreviation": "Int Corps",
+      "type": "corps",
+      "category": "support",
+      "component": "mixed",
+      "parent": null,
+      "badge": "images/cap-badges/intelligence-corps.png",
+      "summary": "Provides military intelligence capabilities in support of commanders and operations.",
+      "role": "Military intelligence",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/intelligence-corps/"
+    },
+
+    "medical": {
+      "name": "Army Medical Services",
+      "shortName": "Army Medical Services",
+      "abbreviation": "AMS",
+      "type": "service-group",
+      "category": "service",
+      "component": "mixed",
+      "parent": null,
+      "badge": "images/cap-badges/army-medical-services.png",
+      "summary": "Provides medical and healthcare support to the Army.",
+      "role": "Medical support",
+      "children": [
+        "rams",
+        "radv-c",
+        "qaaranc"
+      ],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-army-medical-service/"
+    },
+
+    "rams": {
+      "name": "Royal Army Medical Service",
+      "shortName": "Royal Army Medical Service",
+      "abbreviation": "RAMS",
+      "type": "service",
+      "category": "service",
+      "component": "mixed",
+      "parent": "medical",
+      "badge": "images/cap-badges/rams.png",
+      "summary": "Provides military medical capabilities.",
+      "role": "Medical support",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-army-medical-service/"
+    },
+
+    "radv-c": {
+      "name": "Royal Army Dental Corps",
+      "shortName": "Royal Army Dental Corps",
+      "abbreviation": "RADC",
+      "type": "corps",
+      "category": "service",
+      "component": "mixed",
+      "parent": "medical",
+      "badge": "images/cap-badges/radc.png",
+      "summary": "Provides dental services to Army personnel.",
+      "role": "Dental services",
+      "children": [],
+      "url": null
+    },
+
+    "qaaranc": {
+      "name": "Queen Alexandra's Royal Army Nursing Corps",
+      "shortName": "QARANC",
+      "abbreviation": "QARANC",
+      "type": "corps",
+      "category": "service",
+      "component": "mixed",
+      "parent": "medical",
+      "badge": "images/cap-badges/qaranc.png",
+      "summary": "Provides professional military nursing.",
+      "role": "Nursing",
+      "children": [],
+      "url": null
+    },
+
+    "ravc": {
+      "name": "Royal Army Veterinary Corps",
+      "shortName": "Royal Army Veterinary Corps",
+      "abbreviation": "RAVC",
+      "type": "corps",
+      "category": "service",
+      "component": "mixed",
+      "parent": null,
+      "badge": "images/cap-badges/ravc.png",
+      "summary": "Provides military veterinary capabilities and specialist support involving military working animals.",
+      "role": "Veterinary services",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-army-veterinary-corps/"
+    },
+
+    "raptc": {
+      "name": "Royal Army Physical Training Corps",
+      "shortName": "Army Physical Training Corps",
+      "abbreviation": "RAPTC",
+      "type": "corps",
+      "category": "service",
+      "component": "regular",
+      "parent": null,
+      "badge": "images/cap-badges/raptc.png",
+      "summary": "Provides specialist physical training expertise across the Army.",
+      "role": "Physical training",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-army-physical-training-corps/"
+    },
+
+    "ra-chaplains": {
+      "name": "Royal Army Chaplains' Department",
+      "shortName": "Army Chaplains",
+      "abbreviation": "RAChD",
+      "type": "department",
+      "category": "service",
+      "component": "mixed",
+      "parent": null,
+      "badge": "images/cap-badges/rachd.png",
+      "summary": "Provides pastoral and spiritual support to Army personnel and their families.",
+      "role": "Chaplaincy",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-army-chaplains-department/"
+    },
+
+    "rcam": {
+      "name": "Royal Corps of Army Music",
+      "shortName": "Army Music",
+      "abbreviation": "RCAM",
+      "type": "corps",
+      "category": "service",
+      "component": "regular",
+      "parent": null,
+      "badge": "images/cap-badges/rcam.png",
+      "summary": "Provides professional military music in support of ceremonial, operational and Defence engagement activity.",
+      "role": "Military music",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/the-royal-corps-of-army-music/"
+    },
+
+    "sasc": {
+      "name": "Small Arms School Corps",
+      "shortName": "Small Arms School Corps",
+      "abbreviation": "SASC",
+      "type": "corps",
+      "category": "support",
+      "component": "regular",
+      "parent": null,
+      "badge": "images/cap-badges/sasc.png",
+      "summary": "Provides specialist expertise and instruction in infantry weapon systems and related training.",
+      "role": "Weapons training",
+      "children": [],
+      "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/small-arms-school-corps/"
+    }
+
+  }
+}

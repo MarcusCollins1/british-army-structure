@@ -338,11 +338,11 @@
             <div class="section-heading reveal">
                 <p class="eyebrow">REGIMENTS & CORPS</p>
 
-                <h2>Different Roles. One Army.</h2>
+                <h2>Explore the Army</h2>
 
                 <p>
-                    Select a capability below to explore some of the
-                    regiments and corps that contribute to the Army.
+                    Explore the regiments, corps, branches and specialist
+                    organisations that make up the British Army.
                 </p>
             </div>
 
@@ -382,7 +382,7 @@
                         light-role operations to armoured infantry.
                     </p>
 
-                    <button class="card-expand" data-expand="infantry" aria-expanded="false">
+                    <button class="card-expand" data-organisation="infantry" aria-expanded="false">
                         Explore Regiments
                         <span>↓</span>
                     </button>
@@ -407,7 +407,7 @@
                         reconnaissance platforms.
                     </p>
 
-                    <button class="card-expand" data-expand="rac" aria-expanded="false">
+                    <button class="card-expand" data-organisation="rac" aria-expanded="false">
                         Explore Regiments
                         <span>↓</span>
                     </button>
@@ -529,26 +529,49 @@
                     <a href="https://jobs.army.mod.uk/roles/army-medical-service/" class="card-arrow" target="_blank" rel="noopener noreferrer" aria-label="Visit the Army Medical Services Page">↗</a>
                 </article>
 
-            </div>
+                <article class="regiment-card reveal" data-category="service">
+                    <span class="card-tag">SUPPORT & SERVICES</span>
 
-            <div class="regiment-explorer" id="regimentExplorer">
-
-                <div class="regiment-explorer-header">
-                    <div>
-                        <p class="eyebrow" id="explorerLabel">
-                            INFANTRY
-                        </p>
-
-                        <h3 id="explorerTitle">
-                            Infantry Regiments
-                        </h3>
+                    <div class="cap-badge">
+                        <img src="images/cap-badges/" alt="Adjutant General's Corps badge">
                     </div>
 
-                    <button class="explorer-close" id="explorerClose" aria-label="Close regiment explorer">x</button>
+                    <h3>Adjutant General's Corps</h3>
+
+                    <p>
+                        Provides personnel, administrative, policing,
+                        educational and legal capabilities.
+                    </p>
+
+                    <a href="" class="card-arrow" target="_blank" rel="noopener noreferrer" aria-label="Visit the Adjutant General's Corps Page">↗</a>
+
+                    <button class="card-expand" data-organisation="agc" aria-expanded="false">
+                        Explore
+                        <span>↓</span>
+                    </button>
+                </article>
+
+            </div>
+
+            <div class="organisation-explorer" id="organisationExplorer">
+
+                <div class="organisation-explorer-header">
+
+                    <div>
+                        <p class="eyebrow" id="organisationType">CORPS</p>
+
+                        <h3 id="organisationTitle"></h3>
+
+                        <p class="organisation-summary" id="organisationSummary"></p>
+                    </div>
+
+                    <button class="organisation-close" id="organisationClose" aria-label="Close explorer">×</button>
+
                 </div>
 
-                <div class="sub-regiment-grid" id="subRegimentGrid"></div>
+                <button class="organisation-back" id="organisationBack" hidden>← Back</button>
 
+                <div class="organisation-grid" id="organisationGrid"></div>
             </div>
 
         </section>
