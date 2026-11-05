@@ -725,15 +725,20 @@ function renderOrganisation(id) {
             card.appendChild(summary);
         }
 
+        // Actions
+        const actions = document.createElement("div");
+        actions.className = "organisation-card-actions";
+
         // Child organisations
         if (child.children && child.children.length) {
             const explore = document.createElement("button");
             explore.className = "organisation-card-action";
             explore.textContent = "Explore →";
-            explore.addEventListener("click", () => {
+            explore.addEventListener("click", event => {
+                event.stopPropagation();
                 renderOrganisation(childId);
             });
-            card.appendChild(explore);
+            actions.appendChild(explore);
         }
 
         // External website
@@ -744,9 +749,15 @@ function renderOrganisation(id) {
             link.target = "_blank";
             link.rel = "noopener noreferrer";
             link.textContent = "Official page ↗";
-            card.appendChild(link);
+            link.addEventListener("click", event => {
+                event.stopPropagation();
+            });
+            actions.appendChild(link);
         }
 
+        if (actions.children.length) {
+            card.appendChild(actions);
+        }
         organisationGrid.appendChild(card);
     });
 

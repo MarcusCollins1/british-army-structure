@@ -1270,6 +1270,8 @@ h3 {
 /* Cards */
 
 .organisation-card {
+    display: flex;
+    flex-direction: column;
     animation: organisationAppear 0.4s ease backwards;
     background: var(--background-light);
     min-height: 340px;
@@ -1335,35 +1337,48 @@ h3 {
     color: var(--muted);
     font-size: 0.78rem;
     line-height: 1.6;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 /* Actions */
 
-.organisation-card-action,
-.organisation-external {
-    bottom: 22px;
-    color: var(--olive-bright);
-    font-size: 0.7rem;
-    font-weight: 700;
-    position: absolute;
+.organisation-card-actions {
+    align-items: center;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: auto;
+    padding-top: 18px;
 }
 
+/* Explore */
 .organisation-card-action {
     background: transparent;
     border: 0;
+    color: var(--olive-bright);
     cursor: pointer;
-    left: 25px;
+    font-size: 0.7rem;
+    font-weight: 700;
     padding: 0;
+    position: static;
+    text-transform: uppercase;
 }
-
-.organisation-external {
-    left: 25px;
-}
-
-.organisation-card-action:hover,
-.organisation-external:hover {
+.organisation-card-action:hover {
     color: var(--sand);
+}
+
+/* Official website */
+.organisation-external {
+    color: var(--muted);
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-left: auto;
+    position: static;
+    text-transform: uppercase;
+}
+.organisation-external:hover {
+    color: var(--olive-bright);
 }
 
 /* Animation */
