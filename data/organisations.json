@@ -1915,12 +1915,256 @@
       "category": "service",
       "component": "mixed",
       "parent": null,
-      "badge": "images/cap-badges/royal-electrical-and-mechanical-engineers.png",
+      "badge": "images/cap-badges/reme.png",
       "summary": "Provides engineering maintenance, repair and technical support to Army equipment.",
       "role": "Equipment support",
-      "children": [],
+      "children": [
+        "reme-regular",
+        "reme-reserve"
+      ],
       "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/engineering/royal-electrical-and-mechanical-engineers/"
     },
+
+    "reme-regular": {
+      "name": "Regular REME Regiments",
+      "shortName": "Regular Regiments",
+      "abbreviation": null,
+      "type": "group",
+      "category": "service",
+      "component": "regular",
+      "parent": "reme",
+      "badge": "images/cap-badges/reme.png",
+      "summary": "Regular regiments of the Corps of Royal Electrical and Mechanical Engineers.",
+      "role": "Equipment support",
+      "children": [
+        "1-reme",
+        "2-reme",
+        "3-reme",
+        "4-reme",
+        "5-reme",
+        "6-reme",
+        "7-reme",
+        "8-training-reme"
+      ],
+      "url": null
+    },
+
+    "reme-reserve": {
+      "name": "Reserve REME Regiments",
+      "shortName": "Reserve Regiments",
+      "abbreviation": null,
+      "type": "group",
+      "category": "service",
+      "component": "reserve",
+      "parent": "reme",
+      "badge": "images/cap-badges/reme.png",
+      "summary": "Army Reserve regiments of the Corps of Royal Electrical and Mechanical Engineers.",
+      "role": "Equipment support",
+      "children": [
+        "101-reme",
+        "102-reme",
+        "103-reme",
+        "104-reme",
+        "105-reme"
+      ],
+      "url": null
+    },
+
+    "1-reme": {
+      "name": "1 Close Support Battalion REME",
+      "shortName": "1 CS Bn REME",
+      "abbreviation": "1 CS Bn REME",
+      "type": "battalion",
+      "category": "service",
+      "component": "regular",
+      "parent": "reme-regular",
+      "badge": "images/cap-badges/reme.png",
+      "summary": "A Regular REME unit providing equipment support to Army formations.",
+      "role": "Equipment support",
+      "children": [],
+      "url": null
+    },
+
+    "2-reme": {
+      "name": "2 Close Support Battalion REME",
+      "shortName": "2 CS Bn REME",
+      "abbreviation": "2 CS Bn REME",
+      "type": "battalion",
+      "category": "service",
+      "component": "regular",
+      "parent": "reme-regular",
+      "badge": "images/cap-badges/reme.png",
+      "summary": "A Regular REME unit providing equipment support to Army formations.",
+      "role": "Equipment support",
+      "children": [],
+      "url": null
+    },
+
+    "3-reme": {
+      "name": "3 Royal Electrical and Mechanical Engineers",
+      "shortName": "3 REME",
+      "abbreviation": "3 REME",
+      "type": "battalion",
+      "category": "service",
+      "component": "regular",
+      "parent": "reme-regular",
+      "badge": "images/cap-badges/reme.png",
+      "summary": "A Regular REME unit providing engineering and equipment support.",
+      "role": "Equipment support",
+      "children": [],
+      "url": null
+    },
+
+    "4-reme": {
+      "name": "4 Battalion REME",
+      "shortName": "4 Bn REME",
+      "abbreviation": "4 Bn REME",
+      "type": "battalion",
+      "category": "service",
+      "component": "regular",
+      "parent": "reme-regular",
+      "badge": "images/cap-badges/reme.png",
+      "summary": "A Regular REME unit providing engineering and equipment support.",
+      "role": "Equipment support",
+      "children": [],
+      "url": null
+    },
+
+    "5-reme": {
+      "name": "5 Force Support Battalion REME",
+      "shortName": "5 FS Bn REME",
+      "abbreviation": "5 FS Bn REME",
+      "type": "battalion",
+      "category": "service",
+      "component": "regular",
+      "parent": "reme-regular",
+      "badge": "images/cap-badges/reme.png",
+      "summary": "Provides force-level equipment and engineering support.",
+      "role": "Force support",
+      "children": [],
+      "url": null
+    },
+
+    "6-reme": {
+      "name": "6 Battalion REME",
+      "shortName": "6 Bn REME",
+      "abbreviation": "6 Bn REME",
+      "type": "battalion",
+      "category": "service",
+      "component": "regular",
+      "parent": "reme-regular",
+      "badge": "images/cap-badges/reme.png",
+      "summary": "A Regular REME unit providing engineering and equipment support.",
+      "role": "Equipment support",
+      "children": [],
+      "url": null
+    },
+
+    "7-reme": {
+      "name": "7 Aviation Support Battalion REME",
+      "shortName": "7 Avn Sp Bn REME",
+      "abbreviation": "7 Avn Sp Bn REME",
+      "type": "battalion",
+      "category": "service",
+      "component": "regular",
+      "parent": "reme-regular",
+      "badge": "images/cap-badges/reme.png",
+      "summary": "Provides specialist engineering support to Army aviation.",
+      "role": "Aviation engineering support",
+      "children": [],
+      "url": null
+    },
+
+    "8-training-reme": {
+      "name": "8 Training Battalion REME",
+      "shortName": "8 Trg Bn REME",
+      "abbreviation": "8 Trg Bn REME",
+      "type": "training-battalion",
+      "category": "service",
+      "component": "regular",
+      "parent": "reme-regular",
+      "badge": "images/cap-badges/reme.png",
+      "summary": "Provides specialist REME training.",
+      "role": "Training",
+      "children": [],
+      "url": null
+    },
+
+    "101-reme": {
+      "name": "101 Battalion REME",
+      "shortName": "101 Bn REME",
+      "abbreviation": "101 Bn REME",
+      "type": "battalion",
+      "category": "service",
+      "component": "reserve",
+      "parent": "reme-reserve",
+      "badge": "images/cap-badges/reme.png",
+      "summary": "An Army Reserve REME battalion.",
+      "role": "Equipment support",
+      "children": [],
+      "url": null
+    },
+
+    "102-reme": {
+      "name": "102 Battalion REME",
+      "shortName": "102 Bn REME",
+      "abbreviation": "102 Bn REME",
+      "type": "battalion",
+      "category": "service",
+      "component": "reserve",
+      "parent": "reme-reserve",
+      "badge": "images/cap-badges/reme.png",
+      "summary": "An Army Reserve REME battalion.",
+      "role": "Equipment support",
+      "children": [],
+      "url": null
+    },
+
+    "103-reme": {
+      "name": "103 Battalion REME",
+      "shortName": "103 Bn REME",
+      "abbreviation": "103 Bn REME",
+      "type": "battalion",
+      "category": "service",
+      "component": "reserve",
+      "parent": "reme-reserve",
+      "badge": "images/cap-badges/reme.png",
+      "summary": "An Army Reserve REME battalion.",
+      "role": "Equipment support",
+      "children": [],
+      "url": null
+    },
+
+    "104-reme": {
+      "name": "104 Battalion REME",
+      "shortName": "104 Bn REME",
+      "abbreviation": "104 Bn REME",
+      "type": "battalion",
+      "category": "service",
+      "component": "reserve",
+      "parent": "reme-reserve",
+      "badge": "images/cap-badges/reme.png",
+      "summary": "An Army Reserve REME battalion.",
+      "role": "Equipment support",
+      "children": [],
+      "url": null
+    },
+
+    "105-reme": {
+      "name": "105 Battalion REME",
+      "shortName": "105 Bn REME",
+      "abbreviation": "105 Bn REME",
+      "type": "battalion",
+      "category": "service",
+      "component": "reserve",
+      "parent": "reme-reserve",
+      "badge": "images/cap-badges/reme.png",
+      "summary": "An Army Reserve REME battalion.",
+      "role": "Equipment support",
+      "children": [],
+      "url": null
+    },
+
 
     "army-air-corps": {
       "name": "Army Air Corps",
@@ -1933,10 +2177,124 @@
       "badge": "images/cap-badges/army-air-corps.png",
       "summary": "Provides the Army's aviation capability.",
       "role": "Army aviation",
-      "children": [],
+      "children": [
+        "1-aac",
+        "2-aac",
+        "3-aac",
+        "4-aac",
+        "5-aac",
+        "6-aac",
+        "7-aac"
+      ],
       "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/army-air-corps/"
     },
 
+    "1-aac": {
+      "name": "1 Regiment Army Air Corps",
+      "shortName": "1 Regt AAC",
+      "abbreviation": "1 Regt AAC",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "army-air-corps",
+      "badge": "images/cap-badges/army-air-corps.png",
+      "summary": "A Regular flying regiment of the Army Air Corps.",
+      "role": "Army aviation",
+      "children": [],
+      "url": null
+    },
+
+    "2-aac": {
+      "name": "2 Regiment Army Air Corps",
+      "shortName": "2 Regt AAC",
+      "abbreviation": "2 Regt AAC",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "army-air-corps",
+      "badge": "images/cap-badges/army-air-corps.png",
+      "summary": "A Regular regiment of the Army Air Corps with a training role.",
+      "role": "Aviation training",
+      "children": [],
+      "url": null
+    },
+
+    "3-aac": {
+      "name": "3 Regiment Army Air Corps",
+      "shortName": "3 Regt AAC",
+      "abbreviation": "3 Regt AAC",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "army-air-corps",
+      "badge": "images/cap-badges/army-air-corps.png",
+      "summary": "A Regular flying regiment of the Army Air Corps.",
+      "role": "Attack aviation",
+      "children": [],
+      "url": null
+    },
+
+    "4-aac": {
+      "name": "4 Regiment Army Air Corps",
+      "shortName": "4 Regt AAC",
+      "abbreviation": "4 Regt AAC",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "army-air-corps",
+      "badge": "images/cap-badges/army-air-corps.png",
+      "summary": "A Regular flying regiment of the Army Air Corps.",
+      "role": "Attack aviation",
+      "children": [],
+      "url": null
+    },
+
+    "5-aac": {
+      "name": "5 Regiment Army Air Corps",
+      "shortName": "5 Regt AAC",
+      "abbreviation": "5 Regt AAC",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "army-air-corps",
+      "badge": "images/cap-badges/army-air-corps.png",
+      "summary": "A Regular regiment of the Army Air Corps.",
+      "role": "Army aviation",
+      "children": [],
+      "url": null
+    },
+
+    "6-aac": {
+      "name": "6 Regiment Army Air Corps",
+      "shortName": "6 Regt AAC",
+      "abbreviation": "6 Regt AAC",
+      "type": "regiment",
+      "category": "support",
+      "component": "reserve",
+      "parent": "army-air-corps",
+      "badge": "images/cap-badges/army-air-corps.png",
+      "summary": "The Army Reserve regiment of the Army Air Corps.",
+      "role": "Army aviation support",
+      "children": [],
+      "url": null
+    },
+
+    "7-aac": {
+      "name": "7 Regiment Army Air Corps",
+      "shortName": "7 Regt AAC",
+      "abbreviation": "7 Regt AAC",
+      "type": "regiment",
+      "category": "support",
+      "component": "regular",
+      "parent": "army-air-corps",
+      "badge": "images/cap-badges/army-air-corps.png",
+      "summary": "A Regular regiment of the Army Air Corps.",
+      "role": "Army aviation",
+      "children": [],
+      "url": null
+    },
+
+    
     "intelligence-corps": {
       "name": "Intelligence Corps",
       "shortName": "Intelligence Corps",
@@ -1948,9 +2306,123 @@
       "badge": "images/cap-badges/intelligence-corps.png",
       "summary": "Provides military intelligence capabilities in support of commanders and operations.",
       "role": "Military intelligence",
-      "children": [],
+      "children": [
+        "1-mi",
+        "2-mi",
+        "3-mi",
+        "4-mi",
+        "5-mi",
+        "6-mi",
+        "7-mi"
+      ],
       "url": "https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/intelligence-corps/"
     },
+
+    "1-mi": {
+      "name": "1 Military Intelligence Battalion",
+      "shortName": "1 MI Bn",
+      "abbreviation": "1 MI Bn",
+      "type": "battalion",
+      "category": "support",
+      "component": "regular",
+      "parent": "intelligence-corps",
+      "badge": "images/cap-badges/intelligence-corps.png",
+      "summary": "A Regular battalion of the Intelligence Corps.",
+      "role": "Military intelligence",
+      "children": [],
+      "url": null
+    },
+
+    "2-mi": {
+      "name": "2 Military Intelligence Battalion",
+      "shortName": "2 MI Bn",
+      "abbreviation": "2 MI Bn",
+      "type": "battalion",
+      "category": "support",
+      "component": "regular",
+      "parent": "intelligence-corps",
+      "badge": "images/cap-badges/intelligence-corps.png",
+      "summary": "A Regular battalion of the Intelligence Corps.",
+      "role": "Military intelligence",
+      "children": [],
+      "url": null
+    },
+
+    "3-mi": {
+      "name": "3 Military Intelligence Battalion",
+      "shortName": "3 MI Bn",
+      "abbreviation": "3 MI Bn",
+      "type": "battalion",
+      "category": "support",
+      "component": "reserve",
+      "parent": "intelligence-corps",
+      "badge": "images/cap-badges/intelligence-corps.png",
+      "summary": "An Army Reserve battalion of the Intelligence Corps.",
+      "role": "Military intelligence",
+      "children": [],
+      "url": null
+    },
+
+    "4-mi": {
+      "name": "4 Military Intelligence Battalion",
+      "shortName": "4 MI Bn",
+      "abbreviation": "4 MI Bn",
+      "type": "battalion",
+      "category": "support",
+      "component": "regular",
+      "parent": "intelligence-corps",
+      "badge": "images/cap-badges/intelligence-corps.png",
+      "summary": "A Regular battalion of the Intelligence Corps.",
+      "role": "Military intelligence",
+      "children": [],
+      "url": null
+    },
+
+    "5-mi": {
+      "name": "5 Military Intelligence Battalion",
+      "shortName": "5 MI Bn",
+      "abbreviation": "5 MI Bn",
+      "type": "battalion",
+      "category": "support",
+      "component": "reserve",
+      "parent": "intelligence-corps",
+      "badge": "images/cap-badges/intelligence-corps.png",
+      "summary": "An Army Reserve battalion of the Intelligence Corps.",
+      "role": "Military intelligence",
+      "children": [],
+      "url": null
+    },
+
+    "6-mi": {
+      "name": "6 Military Intelligence Battalion",
+      "shortName": "6 MI Bn",
+      "abbreviation": "6 MI Bn",
+      "type": "battalion",
+      "category": "support",
+      "component": "reserve",
+      "parent": "intelligence-corps",
+      "badge": "images/cap-badges/intelligence-corps.png",
+      "summary": "An Army Reserve battalion of the Intelligence Corps.",
+      "role": "Military intelligence",
+      "children": [],
+      "url": null
+    },
+
+    "7-mi": {
+      "name": "7 Military Intelligence Battalion",
+      "shortName": "7 MI Bn",
+      "abbreviation": "7 MI Bn",
+      "type": "battalion",
+      "category": "support",
+      "component": "reserve",
+      "parent": "intelligence-corps",
+      "badge": "images/cap-badges/intelligence-corps.png",
+      "summary": "An Army Reserve battalion of the Intelligence Corps.",
+      "role": "Military intelligence",
+      "children": [],
+      "url": null
+    },
+
 
     "medical": {
       "name": "Army Medical Services",
