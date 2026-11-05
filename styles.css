@@ -620,20 +620,6 @@ h3 {
     }
 }
 
-.display-footer {
-    border-top: 1px solid var(--border);
-    bottom: 30px;
-    color: var(--muted);
-    display: flex;
-    font-size: 0.6rem;
-    justify-content: space-between;
-    left: 60px;
-    letter-spacing: 0.15em;
-    padding-top: 20px;
-    position: absolute;
-    right: 60px;
-}
-
 
 /* =========================================================
    RANKS
@@ -1352,11 +1338,6 @@ footer strong {
 
     .organisation-connector::after {
         width: 90%;
-    }
-
-    .display-footer {
-        left: 25px;
-        right: 25px;
     }
 
     .regiment-grid {
