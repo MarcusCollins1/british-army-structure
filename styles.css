@@ -1382,6 +1382,229 @@ h3 {
 
 }
 
+/* =========================================================
+   MAIN ORGANISATION CARD ACTIONS
+========================================================= */
+
+.organisation-main-card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.regiment-card-actions {
+    align-items: center;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+
+/* Explore */
+
+.regiment-card-actions .card-expand {
+    background: transparent;
+    border: 0;
+    color: var(--olive-bright);
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0;
+    position: static;
+    text-transform: uppercase;
+}
+
+.regiment-card-actions .card-expand:hover {
+    color: var(--sand);
+}
+
+
+/* Official website */
+
+.card-official-link {
+    color: var(--muted);
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-left: auto;
+    text-transform: uppercase;
+}
+
+.card-official-link:hover {
+    color: var(--olive-bright);
+}
+
+/* =========================================================
+   ORGANISATION DETAIL MODAL
+========================================================= */
+
+.organisation-modal {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--text);
+    max-height: 85vh;
+    max-width: 950px;
+    overflow-y: auto;
+    padding: 0;
+    width: calc(100% - 40px);
+}
+
+.organisation-modal::backdrop {
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.72);
+}
+
+
+/* Layout */
+
+.modal-layout {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 220px 1fr;
+    padding: 60px;
+}
+
+
+/* Badge */
+
+.modal-badge {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-badge img {
+    display: block;
+    max-height: 200px;
+    max-width: 200px;
+    object-fit: contain;
+}
+
+
+/* Content */
+
+.modal-content h2 {
+    font-size: clamp(
+        2.5rem,
+        5vw,
+        5rem
+    );
+    margin-bottom: 15px;
+}
+
+.modal-abbreviation {
+    color: var(--olive-bright);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin-bottom: 30px;
+}
+
+.modal-summary {
+    color: var(--muted);
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+
+/* Facts */
+
+.modal-facts {
+    border-bottom: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+    display: grid;
+    gap: 20px;
+    grid-template-columns:
+        repeat(2, 1fr);
+    margin-top: 35px;
+    padding: 25px 0;
+}
+
+.modal-facts div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.modal-facts span {
+    color: var(--olive);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+}
+
+.modal-facts strong {
+    font-size: 0.9rem;
+}
+
+
+/* Modal actions */
+
+.modal-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.modal-explore,
+.modal-official {
+    align-items: center;
+    border: 1px solid var(--border);
+    display: inline-flex;
+    font-size: 0.7rem;
+    font-weight: 700;
+    min-height: 45px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+.modal-explore {
+    background: var(--olive-bright);
+    border-color: var(--olive-bright);
+    color: var(--background);
+    cursor: pointer;
+}
+
+.modal-official {
+    color: var(--text);
+}
+
+.modal-explore:hover {
+    background: var(--sand);
+}
+
+.modal-official:hover {
+    border-color: var(--olive);
+    color: var(--olive-bright);
+}
+
+
+/* Close */
+
+.modal-close {
+    align-items: center;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    cursor: pointer;
+    display: flex;
+    font-size: 1.4rem;
+    height: 42px;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 42px;
+}
+
+.modal-close:hover {
+    background: var(--olive-bright);
+    color: var(--background);
+}
+
 
 /* =========================================================
    FOOTER
@@ -1579,6 +1802,34 @@ footer strong {
     .organisation-badge {
         height: 100px;
         width: 100px;
+    }
+
+    .modal-layout {
+        grid-template-columns: 1fr;
+        padding: 60px 25px 30px;
+    }
+
+    .modal-badge {
+        justify-content: flex-start;
+    }
+
+    .modal-badge img {
+        max-height: 130px;
+        max-width: 130px;
+    }
+
+    .modal-facts {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+    }
+
+    .modal-explore,
+    .modal-official {
+        justify-content: center;
+        width: 100%;
     }
 
     footer {

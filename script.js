@@ -605,8 +605,6 @@ renderRanks("soldiers");
 
 const filterButtons = document.querySelectorAll(".filter");
 
-const regimentCards = document.querySelectorAll(".regiment-card");
-
 
 filterButtons.forEach(button => {
 
@@ -617,24 +615,9 @@ filterButtons.forEach(button => {
         filterButtons.forEach(btn => {
             btn.classList.remove("active");
         });
-
         button.classList.add("active");
-
-
-        regimentCards.forEach(card => {
-
-            const category = card.dataset.category;
-
-            if (filter === "all" || category === filter) {
-                card.classList.remove("hidden");
-            } else {
-                card.classList.add("hidden");
-            }
-
-        });
-
+        renderMainOrganisations(filter);
     });
-
 });
 
 /* =========================================================
@@ -650,6 +633,17 @@ const organisationSummary = document.getElementById("organisationSummary");
 const organisationGrid = document.getElementById("organisationGrid");
 const organisationClose = document.getElementById("organisationClose");
 const organisationBack = document.getElementById("organisationBack");
+
+const organisationModal = document.getElementById("organisationModal");
+const modalClose = document.getElementById("modalClose");
+const modalBadge = document.getElementById("modalBadge");
+const modalType = document.getElementById("modalType");
+const modalTitle = document.getElementById("modalTitle");
+const modalAbbreviation = document.getElementById("modalAbbreviation");
+const modalSummary = document.getElementById("modalSummary");
+const modalRole = document.getElementById("modalRole");
+const modalComponent = document.getElementById("modalComponent");
+const modalActions = document.getElementById("modalActions");
 
 let currentOrganisation = null;
 
@@ -770,11 +764,295 @@ async function loadOrganisationData() {
         data = await response.json();
 
         organisationData = data.organisations;
+
+        renderMainOrganisations();
         
         console.log("Organisation data loaded:", organisationData);
     } catch (error) {
         console.error("Could not load organisation data:", error);
     }
+}
+
+const regimentGrid = document.getElementById("regimentGrid");
+
+function renderMainOrganisations(filter = "all") {
+    regimentGrid.innerHTML = "";
+
+    const organisations = Object.entries(organisationData).filter(([id, organisation]) => {
+                const isTopLevel = organisation.parent === null;
+                const matchesFilter = filter === "all" || organisation.category === filter;
+
+                return (isTopLevel && matchesFilter);
+    });
+
+
+    organisations.forEach(([id, organisation], index) => {
+            const card = createMainOrganisationCard(id, organisation);
+            card.style.animationDelay = `${index * 0.04}s`;
+            regimentGrid.appendChild(card);
+    });
+}
+
+function createMainOrganisationCard(id, organisation) {
+    const card = document.createElement("article");
+    card.className = "regiment-card organisation-main-card";
+    card.dataset.category = organisation.category;
+    card.dataset.organisation = id;
+    card.tabIndex = 0;
+
+    card.setAttribute("role", "button");
+    card.setAttribute("aria-label", `View details for ${organisation.name}`);
+
+    // Category
+
+    const tag = document.createElement("span");
+    tag.className = "card-tag";
+    tag.textContent = formatCategory(organisation.category);
+
+    card.appendChild(tag);
+
+
+    // Badge
+
+    if (organisation.badge) {
+        const badgeContainer = document.createElement("div");
+        badgeContainer.className = "cap-badge";
+
+        const badge = document.createElement("img");
+        badge.src = organisation.badge;
+        badge.alt = `${organisation.name} badge`;
+        badge.loading = "lazy";
+
+        badgeContainer.appendChild(badge);
+
+        card.appendChild(badgeContainer);
+    }
+
+
+    // Name
+
+    const heading = document.createElement("h3");
+
+    heading.textContent = organisation.shortName || organisation.name;
+
+    card.appendChild(heading);
+
+
+    // Description
+
+    if (organisation.summary) {
+        const summary = document.createElement("p");
+        summary.textContent = organisation.summary;
+
+        card.appendChild(summary);
+    }
+
+
+    // Action Area
+
+    const actions = document.createElement("div");
+    actions.className = "regiment-card-actions";
+
+
+    // Children
+
+    if (organisation.children && organisation.children.length > 0) {
+        const explore = document.createElement("button");
+        explore.className = "card-expand";
+        explore.type = "button";
+        explore.textContent = getExploreLabel(organisation);
+
+        explore.addEventListener("click", event => {
+                // Don't open popup
+                event.stopPropagation();
+
+                renderOrganisation(id);
+
+                organisationExplorer.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+        });
+
+        actions.appendChild(explore);
+    }
+
+    // Official Website
+
+    if (organisation.url) {
+        const link = document.createElement("a");
+        link.className = "card-official-link";
+        link.href = organisation.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = "Official website ↗";
+
+        // Don't open popup when clicking the link
+
+        link.addEventListener("click", event => {
+                event.stopPropagation();
+        });
+
+        actions.appendChild(link);
+    }
+
+    if (actions.children.length) {
+        card.appendChild(actions);
+    }
+
+    // Click Card -> Popup
+
+    card.addEventListener("click", () => {
+            openOrganisationModal(id);
+    });
+
+    // Keyboard Access
+
+    card.addEventListener("keydown", event => {
+        if (
+            event.key === "Enter" ||
+            event.key === " "
+        ) {
+            event.preventDefault();
+            openOrganisationModal(id);
+        }
+    });
+
+    return card;
+}
+
+function formatCategory(category) {
+    const labels = {
+        combat: "COMBAT",
+        support: "COMBAT SUPPORT",
+        service: "SUPPORT & SERVICES"
+    };
+
+    return (
+        labels[category] ||
+        category?.toUpperCase() ||
+        ""
+    );
+}
+
+function getExploreLabel(organisation) {
+    if (
+        organisation.type === "arm" &&
+        organisation.name === "Infantry"
+    ) {
+        return "Explore regiments →";
+    }
+
+    if (organisation.type === "corps") {
+        return "Explore units →";
+    }
+
+    return "Explore organisation →";
+}
+
+function openOrganisationModal(id) {
+    const organisation = organisationData[id];
+
+    if (!organisation) {
+        return;
+    }
+
+    // Type
+
+    modalType.textContent = organisation.type?.replaceAll("-", " ").toUpperCase() || "ORGANISATION";
+
+
+    // Name
+
+    modalTitle.textContent = organisation.name;
+
+
+    // Abbreviation
+
+    modalAbbreviation.textContent = organisation.abbreviation || "";
+    modalAbbreviation.hidden = !organisation.abbreviation;
+
+
+    // Summary
+
+    modalSummary.textContent = organisation.summary || "";
+
+
+    // Role
+
+    modalRole.textContent = organisation.role || "Not specified";
+
+
+    // Component
+
+    modalComponent.textContent = formatComponent(organisation.component);
+
+
+    // Badge
+
+    if (organisation.badge) {
+        modalBadge.src = organisation.badge;
+        modalBadge.alt = `${organisation.name} badge`;
+        modalBadge.parentElement.hidden = false;
+    } else {
+        modalBadge.parentElement.hidden = true;
+    }
+
+
+    // Actions
+
+    modalActions.innerHTML = "";
+
+
+    if (
+        organisation.children &&
+        organisation.children.length
+    ) {
+        const explore = document.createElement("button");
+        explore.className = "modal-explore";
+        explore.type = "button";
+        explore.textContent = getExploreLabel(organisation);
+
+
+        explore.addEventListener("click", () => {
+            organisationModal.close();
+
+            renderOrganisation(id);
+
+            setTimeout(() => {
+                organisationExplorer.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }, 100);
+        });
+
+        modalActions.appendChild(explore);
+
+    }
+
+    if (organisation.url) {
+        const link = document.createElement("a");
+        link.className = "modal-official";
+        link.href = organisation.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = "Official Army website ↗";
+
+        modalActions.appendChild(link);
+    }
+    
+    organisationModal.showModal();
+}
+
+function formatComponent(component) {
+    const labels = {
+        regular: "Regular",
+        reserve: "Army Reserve",
+        mixed: "Regular & Reserve"
+    };
+
+    return (labels[component] || "Not specified");
 }
 
 document.querySelectorAll(".card-expand").forEach(button => {
@@ -813,6 +1091,16 @@ organisationClose.addEventListener("click", () => {
     document.querySelectorAll(".card-expand").forEach(button => {
         button.setAttribute("aria-expanded", "false");
     });
+});
+
+modalClose.addEventListener("click", () => {
+    organisationModal.close();
+});
+
+organisationModal.addEventListener("click", event => {
+    if (event.target === organisationModal) {
+        organisationModal.close();
+    }
 });
 
 loadOrganisationData();
