@@ -662,7 +662,7 @@ function renderOrganisation(id) {
 
     // Back Button
     if (organisation.parent) {
-        const parent = organisation[organisation.parent];
+        const parent = organisationData[organisation.parent];
         organisationBack.hidden = false;
         organisationBack.dataset.target = organisation.parent;
         organisationBack.textContent = `← Back to ${parent.name}`;
