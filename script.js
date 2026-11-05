@@ -643,12 +643,6 @@ filterButtons.forEach(button => {
 
 let organisationData = {};
 
-const regimentExplorer = document.getElementById("regimentExplorer");
-const explorerLabel = document.getElementById("explorerLabel");
-const explorerTitle = document.getElementById("explorerTitle");
-const subRegimentGrid = document.getElementById("subRegimentGrid");
-const explorerClose = document.getElementById("explorerClose");
-
 const organisationExplorer = document.getElementById("organisationExplorer");
 const organisationTitle = document.getElementById("organisationTitle");
 const organisationType = document.getElementById("organisationType");
@@ -816,13 +810,6 @@ organisationClose.addEventListener("click", () => {
 
     currentOrganisation = null;
 
-    document.querySelectorAll(".card-expand").forEach(button => {
-        button.setAttribute("aria-expanded", "false");
-    });
-});
-
-explorerClose.addEventListener("click", () => {
-    regimentExplorer.classList.remove("open");
     document.querySelectorAll(".card-expand").forEach(button => {
         button.setAttribute("aria-expanded", "false");
     });
