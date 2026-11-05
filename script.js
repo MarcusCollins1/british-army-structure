@@ -685,6 +685,9 @@ function renderOrganisation(id) {
         const card = document.createElement("article");
         card.className = "organisation-card";
         card.style.animationDelay = `${index * 0.04}s`;
+        card.tabIndex = 0;
+        card.setAttribute("role", "button");
+        card.setAttribute("aria-label", `View details for ${child.name}`)
 
         // Badge
         if (child.badge) {
@@ -754,6 +757,19 @@ function renderOrganisation(id) {
             });
             actions.appendChild(link);
         }
+
+        // Open detail modal
+        card.addEventListener("click", () => {
+            openOrganisationModal(childId);
+        });
+
+        // Keyboard support
+        card.addEventListener("keydown", event => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                openOrganisationModal(childId);
+            }
+        });
 
         if (actions.children.length) {
             card.appendChild(actions);
@@ -963,44 +979,30 @@ function getExploreLabel(organisation) {
 
 function openOrganisationModal(id) {
     const organisation = organisationData[id];
-
     if (!organisation) {
         return;
     }
 
     // Type
-
-    modalType.textContent = organisation.type?.replaceAll("-", " ").toUpperCase() || "ORGANISATION";
-
+    modalType.textContent = formatOrganisationType(organisation.type);
 
     // Name
-
     modalTitle.textContent = organisation.name;
 
-
     // Abbreviation
-
     modalAbbreviation.textContent = organisation.abbreviation || "";
     modalAbbreviation.hidden = !organisation.abbreviation;
 
-
     // Summary
-
     modalSummary.textContent = organisation.summary || "";
 
-
     // Role
-
     modalRole.textContent = organisation.role || "Not specified";
 
-
     // Component
-
     modalComponent.textContent = formatComponent(organisation.component);
 
-
     // Badge
-
     if (organisation.badge) {
         modalBadge.src = organisation.badge;
         modalBadge.alt = `${organisation.name} badge`;
@@ -1009,16 +1011,10 @@ function openOrganisationModal(id) {
         modalBadge.parentElement.hidden = true;
     }
 
-
     // Actions
-
     modalActions.innerHTML = "";
 
-
-    if (
-        organisation.children &&
-        organisation.children.length
-    ) {
+    if (organisation.children && organisation.children.length) {
         const explore = document.createElement("button");
         explore.className = "modal-explore";
         explore.type = "button";
@@ -1064,6 +1060,14 @@ function formatComponent(component) {
     };
 
     return (labels[component] || "Not specified");
+}
+
+function formatOrganisationType(type) {
+    if (!type) {
+        return "ORGANISATION";
+    }
+
+    return type.replaceAll("-", " ").toUpperCase();
 }
 
 document.querySelectorAll(".card-expand").forEach(button => {

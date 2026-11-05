@@ -1216,6 +1216,10 @@ h3 {
     margin-bottom: 20px;
 }
 
+#organisationType {
+    text-transform: uppercase;
+}
+
 .organisation-summary {
     color: var(--muted);
     max-width: 650px;
@@ -1277,11 +1281,19 @@ h3 {
     min-height: 340px;
     padding: 25px;
     position: relative;
+    cursor: pointer;
     transition: background 0.25s ease, transform 0.25s ease;
 }
 .organisation-card:hover {
     background: var(--panel-light);
     transform: translateY(-4px);
+}
+.organisation-card:hover .organisation-badge img {
+    transform: scale(1.05);
+}
+.organisation-card:focus-visible {
+    outline: 2px solid var(--olive-bright);
+    outline-offset: -2px;
 }
 
 /* Badge */
@@ -1299,6 +1311,7 @@ h3 {
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
+    transition: transform 0.25s ease;
 }
 
 /* Type */
@@ -1459,13 +1472,15 @@ h3 {
     background: var(--panel);
     border: 1px solid var(--border);
     color: var(--text);
+    width: min(950px, calc(100% - 40px));
     max-height: 85vh;
-    max-width: 950px;
-    overflow-y: auto;
+    margin: auto;
     padding: 0;
-    width: calc(100% - 40px);
+    overflow-y: auto;
 }
-
+.organisation-modal[open] {
+    display: block;
+}
 .organisation-modal::backdrop {
     backdrop-filter: blur(8px);
     background: rgba(0, 0, 0, 0.72);
